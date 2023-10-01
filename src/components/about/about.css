@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Mono&family=Roboto:wght@100&display=swap');
 
 .about-main-container {
    max-width: 1540px;
@@ -10,10 +8,11 @@
    max-width: 600px;
    text-justify: inter-word;
    margin-bottom: 10px;
-   /* font-style: 'Gabarito' , serif;  */
    font-family: 'Gabarito', cursive;
    font-family: 'Oswald', sans-serif;
    font-family: 'Pixelify Sans', cursive;
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
    font-family: 'Roboto Mono', monospace;
 }
 
