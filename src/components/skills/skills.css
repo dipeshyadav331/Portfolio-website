@@ -53,6 +53,14 @@
       background-size: 50% !important;
    }
 
+   .righttech {
+      display: none;
+   }
+
+   .lefttech{
+      width: 100%;
+   }
+   
    .my-skills-container {
       width: 100% !important;
    }
