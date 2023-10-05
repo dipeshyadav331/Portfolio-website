@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Mono&family=Roboto:wght@100&display=swap');
+
+.text1 {
+    font-weight: bold;
+}
+
+.report-card{
+    font-weight: bold;
+}
+
+.notFlex{
+    display: flex;
+    gap: 25px;
+}
+
+.university{
+    margin-top: 20px;
+}
+
+.report-card:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.text2{
+    font-style: italic;
+}
+
+.out-left{
+    position: relative;
+    height: 375px;
+    width: 4px;
+    background-color: aquamarine;
+}
+
+.st-line{
+    width: 20px; /* Adjust the circle size */
+    height: 20px; /* Adjust the circle size */
+    background-color: #f00; /* Adjust the circle color */
+    border-radius: 50%; /* Make the circle round */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the circles horizontally */
+    box-shadow: 10 10 10px rgba(0, 0, 0, 0.5);
+}
+
+.st-line:nth-child(1) {
+    top: 20px; /* Adjust the position of the first circle */
+  }
+  
+.st-line:nth-child(2) {
+    top: 150px; /* Adjust the position of the second circle */
+  }
+  
+.st-line:nth-child(3) {
+    top: 280px; /* Adjust the position of the third circle */
+  }
+
+.text3{
+    font-family: 'Gabarito', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pixelify Sans', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.text2:hover{
+    color: teal;
+}
