@@ -2,9 +2,13 @@ import ProjectCard from "../../cards/projectCard/ProjectCard";
 import "./project.css";
 import { projectData } from "../../Object Files/projectObject";
 import projectIcon from "../../assets/calander.png";
-import { motion } from "framer-motion";
-
+// import { motion } from "framer-motion";
 const Project = () => {
+
+  projectData.map((items) => {
+    console.log(items);
+  });
+  
   return (
     <section id="project">
       <div className="project-cont">
@@ -18,12 +22,15 @@ const Project = () => {
           </div>
 
           <div>
-            <h1 className="project-head-text alt-text"> My Development Projects</h1>
+            <h1 className="project-head-text alt-text">
+              {" "}
+              My Development Projects
+            </h1>
             <hr className="short-hr project-hr" />
           </div>
         </div>
 
-        <motion.div className="project-container">
+        {/* <motion.div className="project-container"> */}
           {projectData.map((items) => {
             return (
               <ProjectCard key={items.id} {...items}>
@@ -37,7 +44,7 @@ const Project = () => {
               </ProjectCard>
             );
           })}
-        </motion.div>
+        {/* </motion.div> */}
       </div>
     </section>
   );
