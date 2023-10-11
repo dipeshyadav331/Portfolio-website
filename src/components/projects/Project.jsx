@@ -4,11 +4,6 @@ import { projectData } from "../../Object Files/projectObject";
 import projectIcon from "../../assets/calander.png";
 // import { motion } from "framer-motion";
 const Project = () => {
-
-  projectData.map((items) => {
-    console.log(items);
-  });
-  
   return (
     <section id="project">
       <div className="project-cont">
