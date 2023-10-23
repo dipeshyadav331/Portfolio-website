@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
 body {
   color: var(--primary-text);
   font-size: 16px;
@@ -18,7 +24,7 @@ body #light {
 
 body #dark {
   background: var(--primary-bg-dark);
-  padding: 16px;
+  /* padding: 16px; */
   backdrop-filter: blur(100%);
   color: var(--white);
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/538/909/original/glowing-shinny-particles-stars-animation-on-black-background-free-video.jpg");
