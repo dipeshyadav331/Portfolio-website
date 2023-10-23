@@ -2,7 +2,7 @@ import "./navBar.css";
 import { useState } from "react";
 import Scrollspy from "react-scrollspy";
 import navData from "../../Object Files/nav";
-import Ilma from "../../assets/profile.png";
+import dp from "../../assets/WhatsApp Image 2023-10-23 at 1.43.52 PM.jpeg";
 
 const NavBar = ({ onClick, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,18 +15,16 @@ const NavBar = ({ onClick, children }) => {
     <nav className="nav-cont">
       <a href="/" className="logo">
         <img
-          src={Ilma}
-          alt="Ilma"
+          src={dp}
+          alt="dP"
           className=" circle-card-cont logo_img"
         />
-        <span className="logo_text">
-
-        DIPESH YADAV</span>
+        {/* <span className="logo_text"></span> */}
       </a>
       
       <>
         <Scrollspy
-          items={["home", "about", "project", "skill", "contact"]}
+          items={["home", "about", "project", "skill", "education" , "contact"]}
           currentClassName="active"
           className={`links-container ${isOpen && "show-tab"} `}
           onClick={handleIsOpen}
