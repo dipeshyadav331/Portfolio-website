@@ -28,9 +28,9 @@ function App() {
 
   return (
     <div className="App" id={theme}>
-      <NavBar onClick={toggleTheme}>
+      {/* <NavBar onClick={toggleTheme}>
         {theme === "light" ? <Brightness2 /> : <Brightness2 />}
-      </NavBar>
+      </NavBar> */}
 
       <Routes>
         <Route path="/" element={<Main />} />
