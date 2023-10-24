@@ -7,9 +7,9 @@ export const projectData = [
     title: "VibeVerse (Social Media Platform)",
     description: [{heading: "JWT Authentication" , brief: "To ensure the utmost security, Vibevers utilizes JSON Web Tokens (JWT) for authentication. Every visit to the platform is authenticated, guaranteeing that only authorized users gain access to their accounts and data."} , 
                   {heading: "Password Encryption with Bcrypt" , brief: "User passwords are securely stored using Bcrypt encryption, enhancing data security and confidentiality. This industry-standard encryption technique safeguards user credentials from potential threats."} ,
-                  {heading: "React for Intuitive Frontend" , brief: "Vibeverse boasts an intuitive and responsive frontend developed with React. The user interface is designed with a user-centric approach, providing a visually appealing and user-friendly environment."} ,
+                  {heading: "React for Intuitive Frontend" , brief: "Vibeverse boasts an intuitive frontend developed with React. The user interface is designed with a user-centric approach, providing a visually appealing and user-friendly environment."} ,
                   {heading: "Email Verification with Nodemailer" , brief: "Security and trust are paramount. Vibeverse employs Nodemailer for email verification through OTP (One-Time Password). This ensures that users can securely access their accounts, safeguarding their data and privacy."} ,
-                  {heading: "Database Powerhouse: MongoDB" , brief: "Vibeverse leverages the robust capabilities of MongoDB to efficiently store user data. This NoSQL database ensures high scalability and flexibility, making it perfect for managing the dynamic profiles and posts of our users."} ,
+                  {heading: "Database: MongoDB" , brief: "Vibeverse leverages the robust capabilities of MongoDB to efficiently store user data. This NoSQL database ensures high scalability and flexibility, making it perfect for managing the dynamic profiles and posts of our users."} ,
                   {heading: "Express for Seamless Routing" , brief: "Our platform utilizes Express.js for effortless route management. It acts as the backbone of the application, facilitating the smooth flow of data between the client and server, ensuring a seamless user experience."} , 
                   {heading: "Real-Time Engagement" , brief: "Vibeverse brings real-time interaction to the forefront, allowing users to create and like posts with immediate results. This feature enhances engagement and fosters a sense of community among users."} ,
                   {heading: "Cloudinary for Image Storage" , brief: "Cloudinary serves as the backbone for storing user-generated images and posts. This cloud-based solution ensures quick and reliable access to multimedia content."}
@@ -21,22 +21,18 @@ export const projectData = [
   {
     id: uuid(),
     ytlink: "https://www.youtube.com/embed/FxAG_11PzCk?si=p_8D5eQj3e4FHnko?rel=0",
-    title: "Marketplace",
-    description: [{heading: "React" , brief: "My Project"} , {heading: "React" , brief: "My Project"}],
-    stacks: ["React", "CSS", "API" , "MongoDB" , "Express"],
+    title: "Marketplace (Online Shopping Platform)",
+    description: [{heading: "Backend Management using Strapi" , brief: "Used Strapi, a powerful content management system, to build a robust backend. This enabled me to easily add, update, and manage product listings with images, descriptions, and pricing."} , 
+                  {heading: "Secure Payment Integration using Stripe" , brief: "Integrated Stripe, a trusted payment gateway, to ensure secure and efficient payment processing. Users can confidently add items to their cart and complete transactions with the assurance of a safe payment platform."} , 
+                  {heading: "React" , brief : "Developed the frontend using React, a dynamic JavaScript library. This choice allowed for a highly responsive and user-friendly shopping experience, adapting seamlessly to various devices and screen sizes."}  ,
+                  {heading: "Efficient State Management using Redux" , brief : "Employed Redux, a state management library, to effectively manage application data. It ensures a smooth flow of information throughout the app, enhancing user interaction and experience."}  ,
+                  {heading: "Simplified API Calls" , brief : "Utilized 'createAsyncThunk' from Redux Toolkit in combination with Axios to make API calls to the backend. This approach streamlined communication between the frontend and backend, resulting in a more user-friendly and efficient experience."}  , 
+                  {heading: "Hosting" , brief : "Hosted the backend and database on Digital Ocean, a reputable cloud infrastructure provider. This ensures scalability, performance, and reliability, essential for the seamless operation of the application."}  
+                ],
+    stacks: ["React", "CSS", "API" , "Strapi" , "Redux" , "SASS" , "Stripe" , "Axios"],
     liveSite: "",
     github : ""
   },
-  // {
-  //   id: uuid(),
-  //   ytlink: "https://www.youtube.com/embed/FxAG_11PzCk?si=p_8D5eQj3e4FHnko?rel=0",
-  //   title: "Apple E-Commerce ",
-  //   description: [{heading: "React" , brief: "My Project"}],
-  //   stacks: ["HTML" , "CSS" , "Javascript", "Framer Motion"],
-  //   liveSite: "https://apple.vibeverse.fun/",
-  //   github: "https://github.com/dipeshyadav331/Apple-website"
-  // },
- 
   {
     id: uuid(),
     ytlink: "https://www.youtube.com/embed/FxAG_11PzCk?si=p_8D5eQj3e4FHnko?rel=0",
@@ -47,7 +43,7 @@ export const projectData = [
                   {heading: "My Portfolio Snapshot" , brief: "My personal portfolio website elegantly showcases my professional journey. It features a diverse collection of projects, a comprehensive breakdown of my skills, and insights into my educational background, offering visitors a glimpse into my expertise and creative capabilities."}
                   ],
     stacks: ["React", "CSS", "JSX"],
-    liveSite: "https://yadavdipesh.me/",
+    liveSite: "https://yadavdipesh.live/",
     github: "https://github.com/dipeshyadav331/Portfolio-website"
   },
 
