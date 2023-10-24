@@ -66,7 +66,7 @@ const Hero = ({ onClick }) => {
             </div>
             <h1 className="hero-main-text ">
               A seasoned <span className="alt-text">Competitive Programmer</span> and a
-              <span className="alt-text"> Web Developer</span> , Skilled in JAVA.  
+              <span className="alt-text"> Full Stack Developer</span> , Skilled in JAVA.  
             </h1>
 
             <div className="btn-div">
