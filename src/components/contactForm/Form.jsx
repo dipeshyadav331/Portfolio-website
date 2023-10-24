@@ -70,9 +70,9 @@ const Form = ({ nameRef }) => {
       "C4KKtrWEfqXACsNiR")
       .then(
         (result) => {
-          console.log(email );
-          console.log(result.text);
-          console.log("message sent");
+          // console.log(email );
+          // console.log(result.text);
+          // console.log("message sent");
           setIsEmailSent(true);
           setIsDisabled(true);
         },
@@ -96,7 +96,7 @@ const Form = ({ nameRef }) => {
   return (
     <form className="my-form" ref={form} onSubmit={sendMail}>
       <div className=" alt-text-yellow Message-me">
-          <h1>Contact Me</h1>
+          <h1>Let's Work Together</h1>
       </div>
       <div className="form-div">
         <input
