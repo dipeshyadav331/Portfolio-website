@@ -4,11 +4,13 @@ import ContactForm from "../components/contactForm/ContactForm";
 import Hero from "../components/hero/Hero";
 import Project from "../components/projects/Project";
 import Skills from "../components/skills/Skills";
-import Education from "../components/Education/education"
+import Education from "../components/Education/education";
 import { useEffect, useState } from "react";
-import { AnimatePresence , motion} from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader/index.jsx";
-import NavBar from "../components/navbar/NavBar.jsx"
+import NavBar from "../components/navbar/NavBar.jsx";
+import { motion, useScroll, useSpring } from "framer-motion";
+
 const Main = () => {
   const contactClick = useRef("#contact");
 
@@ -16,32 +18,19 @@ const Main = () => {
     contactClick.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const leftAboutVariant = {
-    hidden: {
-      x: "-100%",
-      opacity: 0,
-      scale: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      rotate: 0,
-      scale: 1,
-      transition: {
-        type: "linear",
-        bounce: 0,
-        duration: 1,
-      },
-    },
-  };
-
   const [isLoading, setIsLoading] = useState(true);
+
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
 
   useEffect(() => {
     (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-
       setTimeout(() => {
         setIsLoading(false);
         document.body.style.cursor = "default";
@@ -53,14 +42,15 @@ const Main = () => {
   return (
     <div>
       <AnimatePresence mode="wait">
-          {isLoading && <Preloader />}
+        {isLoading && <Preloader />}
       </AnimatePresence>
-      
-      {!isLoading && <NavBar/>}
+
+      <motion.div className="progress-bar" style={{ scaleX }} />
+      {!isLoading && <NavBar />}
       <Hero onClick={handleClick} />
       <About />
       <Project />
-      <Skills />
+      <Skills /> 
       <Education />
       <ContactForm contact={contactClick} />
     </div>
