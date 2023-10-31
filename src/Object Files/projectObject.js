@@ -30,8 +30,8 @@ export const projectData = [
                   {heading: "Hosting" , brief : "Hosted the backend and database on Digital Ocean, a reputable cloud infrastructure provider. This ensures scalability, performance, and reliability, essential for the seamless operation of the application."}  
                 ],
     stacks: ["React" , "API" , "Strapi" , "Redux" , "SASS" , "Stripe" , "Axios"],
-    liveSite: "",
-    github : ""
+    liveSite: "https://marketplace-mw28.onrender.com/",
+    github : "https://github.com/dipeshyadav331/marketplace-frontend"
   },
   {
     id: uuid(),
