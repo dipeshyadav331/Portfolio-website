@@ -8,27 +8,20 @@ body {
   color: var(--primary-text);
   font-size: 16px;
   font-family: "Play", sans-serif;
+  display: flex;
+  align-items: center;
+  scroll-behavior: smooth;
 }
 
 ::selection {
-  background-color: #e8171e; /* Background color when text is selected */
-  color: white; /* Text color when text is selected */
-}
-
-body #light {
-  background: var(--primary-bg);
-  
-  background-size: contain;
-  padding: 16px;
+  background-color: #e8171e;  
+  color: white; 
 }
 
 body #dark {
   background: var(--primary-bg-dark);
-  /* padding: 16px; */
   backdrop-filter: blur(100%);
-  color: var(--white);
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/538/909/original/glowing-shinny-particles-stars-animation-on-black-background-free-video.jpg");
- 
+  color: var(--white); 
   background-size: contain;
 }
 
@@ -56,13 +49,11 @@ body #dark {
 #dark .scroll_to_top {
   color: var(--alt-text) !important;
 }
-
-/* width */
+ 
 ::-webkit-scrollbar {
   width: 5px;
 }
-
-/* Track */
+ 
 body::-webkit-scrollbar-track {
   background: var(--white);
 }
@@ -72,8 +63,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--primary-text);
   border-radius: 10px;
 }
-
-/* Handle on hover */
+ 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--yellow);
 }
@@ -127,9 +117,8 @@ body::-webkit-scrollbar-thumb {
   body #dark {
     background-size: 180%;
   }
-}
+} 
 
-/* ========== KEYFRAMES ========== */
 @keyframes bouncing {
   0% {
     transform: translateY(0px);
@@ -192,8 +181,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/* @media (width <=900px) {
-  body{
-    font-size: 10px;
-  }
-} */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--red);
+  background-color: #e8171e;
+  transform-origin: 0%;
+  z-index: 101;
+}
