@@ -17,8 +17,7 @@
     background-color: white;
   }
 
-  .systum{
-    /* width: 80%; */
+  .systum{ 
     height: 10px;
     border-radius: 10px;
     background-color: greenyellow;
@@ -31,8 +30,7 @@
 
   .right_skills{
       width: 65vw;
-      display: flex;
-      /* gap: 59vw; */
+      display: flex; 
       justify-content: space-between;
   }
   
