@@ -20,7 +20,7 @@ export const projectData = [
   },
   {
     id: uuid(),
-    ytlink: "https://www.youtube.com/embed/FxAG_11PzCk?si=p_8D5eQj3e4FHnko?rel=0",
+    ytlink: "https://www.youtube-nocookie.com/embed/5A9cxIOi5yc?si=XBXUP_lwGzM9c9Dv",
     title: "Marketplace (Online Shopping Platform) - Full Stack Project",
     description: [{heading: "Backend Management using Strapi" , brief: "Used Strapi, a powerful content management system, to build a robust backend. This enabled me to easily add, update, and manage product listings with images, descriptions, and pricing."} , 
                   {heading: "Secure Payment Integration using Stripe" , brief: "Integrated Stripe, a trusted payment gateway, to ensure secure and efficient payment processing. Users can confidently add items to their cart and complete transactions with the assurance of a safe payment platform."} , 
@@ -35,7 +35,7 @@ export const projectData = [
   },
   {
     id: uuid(),
-    ytlink: "https://www.youtube.com/embed/FxAG_11PzCk?si=p_8D5eQj3e4FHnko?rel=0",
+    ytlink: "https://www.youtube-nocookie.com/embed/5A9cxIOi5yc?si=XBXUP_lwGzM9c9Dv",
     title: "Portfolio Website",
     description: [{heading: "React" , brief: "At the core of my portfolio site is React, a dynamic JavaScript library renowned for its ability to create rich, interactive user interfaces. React's component-based architecture empowers me to craft a responsive and aesthetically pleasing site that adapts seamlessly to different devices and screen sizes."} , 
                   {heading: "Framer Motion" , brief: "To captivate visitors, I harnessed the capabilities of Framer Motion, an animation library for React. This tool breathes life into my site, creating a visually engaging and memorable user experience. The subtle transitions, smooth scroll effects, and eye-catching animations not only showcase my dedication to aesthetic detail but also keep visitors engaged."},
