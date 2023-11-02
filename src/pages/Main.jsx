@@ -11,6 +11,7 @@ import Preloader from "../components/Preloader/index.jsx";
 import NavBar from "../components/navbar/NavBar.jsx";
 import { motion, useScroll, useSpring } from "framer-motion";
 
+
 const Main = () => {
   const contactClick = useRef("#contact");
 
@@ -20,14 +21,12 @@ const Main = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
-
 
   useEffect(() => {
     (async () => {
@@ -50,7 +49,7 @@ const Main = () => {
       <Hero onClick={handleClick} />
       <About />
       <Project />
-      <Skills /> 
+      <Skills />
       <Education />
       <ContactForm contact={contactClick} />
     </div>
