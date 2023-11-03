@@ -20,8 +20,8 @@ export const projectData = [
   },
   {
     id: uuid(),
-    ytlink: "https://www.youtube-nocookie.com/embed/5A9cxIOi5yc?si=XBXUP_lwGzM9c9Dv",
-    title: "Marketplace (Online Shopping Platform) - Full Stack Project",
+    ytlink: "https://www.youtube.com/embed/fUXonYjtxt8?si=asAnvTyUIrnzFWZE",
+    title: "Marketify (Online Shopping Platform) - Full Stack Project",
     description: [{heading: "Backend Management using Strapi" , brief: "Used Strapi, a powerful content management system, to build a robust backend. This enabled me to easily add, update, and manage product listings with images, descriptions, and pricing."} , 
                   {heading: "Secure Payment Integration using Stripe" , brief: "Integrated Stripe, a trusted payment gateway, to ensure secure and efficient payment processing. Users can confidently add items to their cart and complete transactions with the assurance of a safe payment platform."} , 
                   {heading: "React" , brief : "Developed the frontend using React, a dynamic JavaScript library. This choice allowed for a highly responsive and user-friendly shopping experience, adapting seamlessly to various devices and screen sizes."}  ,
