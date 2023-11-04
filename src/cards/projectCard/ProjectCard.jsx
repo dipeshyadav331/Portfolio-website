@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="project-card-container">
-        <iframe width="560" height="315" src={ytlink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src={ytlink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen='allowfullscreen'></iframe>
       <div>
         <p className="project--title">{title}</p>
         <br />
