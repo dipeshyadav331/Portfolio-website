@@ -72,7 +72,7 @@ const Hero = ({ onClick }) => {
       </button>
       {isPlaying && (
         <ReactAudioPlayer
-          src={song} // Replace with the path to your audio file
+          src={song}  
           autoPlay
         />
       )}
@@ -122,7 +122,7 @@ const Hero = ({ onClick }) => {
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
                   <Button
-                    href="https://drive.google.com/file/d/15BFKSEzE2oRTZteujKN9BSFoV-kSeGIe/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1_DuvtpXp8-oX1Nz3IeNdW3BSMkes1fqd/view?usp=drive_link"
                     className="btn btnnn"
                     target="blank"
                   >
