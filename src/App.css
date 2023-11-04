@@ -10,7 +10,7 @@ body {
   font-family: "Play", sans-serif;
   display: flex;
   align-items: center;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 ::selection {
