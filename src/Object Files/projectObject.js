@@ -3,7 +3,7 @@ import { v4 as uuid } from "uuid";
 export const projectData = [
   {
     id: uuid(),
-    ytlink: "https://www.youtube-nocookie.com/embed/5A9cxIOi5yc?si=XBXUP_lwGzM9c9Dv",
+    ytlink: "https://www.youtube.com/embed/ri0Ph8kFG4k?si=OJaNjCcxKm9a3IAP",
     title: "VibeVerse (Social Media Platform) - Full Stack Project",
     description: [{heading: "JWT Authentication" , brief: "To ensure the utmost security, Vibevers utilizes JSON Web Tokens (JWT) for authentication. Every visit to the platform is authenticated, guaranteeing that only authorized users gain access to their accounts and data."} , 
                   {heading: "Password Encryption with Bcrypt" , brief: "User passwords are securely stored using Bcrypt encryption, enhancing data security and confidentiality. This industry-standard encryption technique safeguards user credentials from potential threats."} ,
