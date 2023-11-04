@@ -15,7 +15,7 @@ export const projectData = [
                   {heading: "Cloudinary for Image Storage" , brief: "Cloudinary serves as the backbone for storing user-generated images and posts. This cloud-based solution ensures quick and reliable access to multimedia content."}
                 ],
     stacks: ["React","MongoDB","ExpressJS", "NodeJS" , "JSX" , "API"],
-    liveSite: "https://vibeverse.fun/",
+    liveSite: "https://sea-turtle-app-briqw.ondigitalocean.app/",
     github: "https://github.com/dipeshyadav331/VibeVerse",
   },
   {
