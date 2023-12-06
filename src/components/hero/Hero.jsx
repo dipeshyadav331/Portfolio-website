@@ -12,7 +12,7 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import LocomotiveScroll from "locomotive-scroll";
 
 const Hero = ({ onClick }) => {
-  
+  const locomotiveScroll = new LocomotiveScroll();
   const [isOpen, setIsOpen] = useState(false);
   const leftVariant = {
     hidden: {
