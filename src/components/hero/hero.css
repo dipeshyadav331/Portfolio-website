@@ -1,7 +1,6 @@
 #home {
   padding: 0;
   cursor: default;
-  
 }
 
 .parent {
@@ -40,7 +39,7 @@
   align-self: flex-end;
   margin-top: 6rem;
   justify-content: center; 
-  border-radius: 20px;
+  border-radius: 20px; 
 }
  
 
@@ -59,7 +58,8 @@
 }
 
 .hero-img {
-  width: 100%;
+  width: 80%;
+  height: 80%;
   border-radius: 2%;
 }
 

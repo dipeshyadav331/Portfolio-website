@@ -9,8 +9,10 @@ import song from "../../assets/song.mp3";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import LocomotiveScroll from "locomotive-scroll";
 
 const Hero = ({ onClick }) => {
+  
   const [isOpen, setIsOpen] = useState(false);
   const leftVariant = {
     hidden: {
@@ -51,31 +53,23 @@ const Hero = ({ onClick }) => {
 
   return (
     <section id="home" style={{ backgroundColor: "rgb(197,23,69" }}>
-       
-      
       <div className="hero-main-cont">
         <motion.div
-          className="hero-flex"
+          className="hero-flex"  
           initial={"hidden"}
           whileInView={"show"}
           transition={{ staggerChildren: 0.2 }}
         >
-         
-          <div className="leftfram">
-
           <button className="btn move_to_top" onClick={toggleAudio}>
-        {isPlaying ? (
-          <FontAwesomeIcon icon={faPause} />
-        ) : (
-          <FontAwesomeIcon icon={faPlay} bounce />
-        )}
-      </button>
-      {isPlaying && (
-        <ReactAudioPlayer
-          src={song}  
-          autoPlay
-        />
-      )}
+            {isPlaying ? (
+              <FontAwesomeIcon icon={faPause} />
+            ) : (
+              <FontAwesomeIcon icon={faPlay} bounce />
+            )}
+          </button>
+
+          <div className="leftfram" data-scroll data-scroll-speed="-0.35">
+            {isPlaying && <ReactAudioPlayer src={song} autoPlay />}
             <motion.div className="hero-sub-cont-1" variants={leftVariant}>
               <p className="selfName">
                 Hi, <span className="wave">👋</span>
@@ -134,8 +128,8 @@ const Hero = ({ onClick }) => {
             </motion.div>
           </div>
 
-          <div className="rightfram">
-            <motion.div
+          <div className="rightfram" data-scroll data-scroll-speed="0.9">
+            {/* <motion.div
               layout
               data-isOpen={isOpen}
               initial={{ borderRadius: 50 }}
@@ -144,9 +138,9 @@ const Hero = ({ onClick }) => {
               // whileHover={{ scale: 1.1 }}
               // whileTap={{ scale: 0.9 }}
               // transition={{ type: "spring", stiffness: 400, damping: 20 }}
-            >
-              <img src={DipeshPhoto} alt="Dipesh_Photo" className="hero-img" />
-            </motion.div>
+            > */}
+            <img src={DipeshPhoto} alt="Dipesh_Photo" className="hero-img" />
+            {/* </motion.div> */}
           </div>
         </motion.div>
       </div>
