@@ -7,8 +7,23 @@ import Main from "./pages/Main";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 import "../src/components/footer/Footer";
 import { motion, useScroll, useSpring } from "framer-motion";
+import Lenis from '@studio-freight/lenis'
 
 function App() {
+
+  const lenis = new Lenis()
+
+    lenis.on('scroll', (e) => {
+        console.log(e)
+    })
+
+    function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
   const [theme, setTheme] = useState(
     localStorage.getItem("themeColor")
       ? localStorage.getItem("themeColor").toString()
