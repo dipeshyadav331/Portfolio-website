@@ -140,7 +140,7 @@ const Hero = ({ onClick }) => {
               // transition={{ type: "spring", stiffness: 400, damping: 20 }}
             > */}
             <img src={DipeshPhoto} alt="Dipesh_Photo" className="hero-img" />
-      
+            {/* </motion.div> */}
           </div>
         </motion.div>
       </div>
