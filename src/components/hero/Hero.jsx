@@ -52,7 +52,7 @@ const Hero = ({ onClick }) => {
   };
 
   return (
-    <section id="home" style={{ backgroundColor: "rgb(197,23,69" }}>
+    <section id="home" className="aniHero" >
       <div className="hero-main-cont">
         <motion.div
           className="hero-flex"  
