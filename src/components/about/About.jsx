@@ -3,9 +3,11 @@ import microphone from "../../assets/about.png";
 import Button from "../../cards/buttons/Button";
 import { motion } from "framer-motion"; 
 import LocomotiveScroll from "locomotive-scroll";
-
+import { gsap } from "gsap";    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
+  gsap.registerPlugin(ScrollTrigger);
   const locomotiveScroll = new LocomotiveScroll();
   const leftAboutVariant = {
     hidden: {
@@ -41,14 +43,23 @@ const About = () => {
     },
   };
 
+  ScrollTrigger.create({
+    trigger: ".delll",
+    start: "top 300px",
+    end: "-=200px",
+    markers: true,
+    pin: true, 
+    scrub: 1,
+  })
+
   return (
     <section id="about" className="aniAbout" >
       
       <motion.div
         className="about-main-container"
-        initial={"hidden"}
-        whileInView={"show"}
-        transition={{ staggerChildren: 0.2 }}
+        // initial={"hidden"}
+        // whileInView={"show"}
+        // transition={{ staggerChildren: 0.2 }}
       >
         <div className="about-container">
           <motion.div
@@ -56,7 +67,7 @@ const About = () => {
             variants={leftAboutVariant}
           ></motion.div>
 
-          <div className="delll" data-scroll data-scroll-speed="-0.35">
+          <div className="delll" >
 
           
           <motion.div
