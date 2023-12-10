@@ -46,8 +46,7 @@ const About = () => {
   ScrollTrigger.create({
     trigger: ".delll",
     start: "top 300px",
-    end: "-=200px",
-    markers: true,
+    end: "-=200px", 
     pin: true, 
     scrub: 1,
   })
