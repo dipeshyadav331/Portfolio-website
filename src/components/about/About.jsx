@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import LocomotiveScroll from "locomotive-scroll";
 import { gsap } from "gsap";    
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Height } from "@material-ui/icons";
 
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -52,7 +53,7 @@ const About = () => {
   })
 
   return (
-    <section id="about" className="aniAbout" >
+    <section id="about" className="aniAbout">
       
       <motion.div
         className="about-main-container"

@@ -8,6 +8,10 @@
     align-items: center;
  }
  
+ .aniProject{
+   background-image: url(../../assets/project_background1.jpg);
+ }
+
  .project-cont {
     display: flex;
     flex-direction: column;

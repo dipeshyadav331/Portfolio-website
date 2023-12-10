@@ -39,7 +39,7 @@ const rightAboutVariant = {
 };
 const Skills = () => {
   return (
-    <section id="skill" style={{ backgroundColor: '#f108a4'}}>
+    <section id="skill" className="aniSkill" style={{ backgroundColor: '#f108a4'}}>
       <div className="skills-container">
         <div className="flex">
           <div className="abt-image-div">

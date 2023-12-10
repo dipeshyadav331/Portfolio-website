@@ -1,6 +1,6 @@
 .project-card-container {
     width: 70%; 
-    padding: .5rem;
+    /* padding: .5rem; */
     box-shadow: var(--box-shadow);
     border-radius: 5px;
     overflow: hidden;
@@ -99,7 +99,7 @@
  }
  
  .project-links-cont {
-    padding: 8px 0;
+    /* padding: 8px 0; */
     position: relative;
     justify-content: space-between;
     margin-top: 20px;
@@ -108,7 +108,7 @@
  .project-links {
     border-radius: 50%;
     box-shadow: var(--box-shadow);
-    padding: .5rem;
+    /* padding: .5rem; */
     width: 35px;
     height: 35px;
     display: flex;
@@ -154,7 +154,7 @@
     position: relative;
     left: -18px;
     z-index: 2;
-    padding: .3rem .3rem .3rem 1rem !important;
+    /* padding: .3rem .3rem .3rem 1rem !important; */
     align-items: center;
     display: flex;
     color: darkorange;

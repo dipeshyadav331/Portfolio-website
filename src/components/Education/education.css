@@ -2,11 +2,13 @@
 
 .text1 {
     font-weight: bold;
+    color: black;
 }
 
 .text2{
     font-style: italic;
     cursor: default;
+    color: rgb(40, 31, 31);
 }
 
 .text3{
@@ -16,7 +18,7 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Roboto Mono', monospace;
-    color: turquoise
+    color: rgb(152, 94, 2)
 }
 
 .text2:hover{
@@ -74,6 +76,10 @@
     width: 2px;
     border-radius: 10%;
     background-color: aquamarine;
+}
+
+.report-card {
+    color:hotpink
 }
 
 .report-card:hover{
