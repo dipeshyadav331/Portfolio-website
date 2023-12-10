@@ -12,6 +12,10 @@
    margin-left: 10px;
 }
 
+.aniAbout{
+   background-image: url(../../assets/about_background.jpg);
+}
+
 .about-me-text {
    max-width: 600px;
    text-justify: inter-word;

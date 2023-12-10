@@ -2,7 +2,11 @@ import "./about.css";
 import microphone from "../../assets/about.png";
 import Button from "../../cards/buttons/Button";
 import { motion } from "framer-motion"; 
+import LocomotiveScroll from "locomotive-scroll";
+
+
 const About = () => {
+  const locomotiveScroll = new LocomotiveScroll();
   const leftAboutVariant = {
     hidden: {
       x: "-100%",
@@ -38,7 +42,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" style={{ backgroundColor: "green" }}>
+    <section id="about" className="aniAbout" >
       
       <motion.div
         className="about-main-container"
@@ -52,6 +56,9 @@ const About = () => {
             variants={leftAboutVariant}
           ></motion.div>
 
+          <div className="delll" data-scroll data-scroll-speed="-0.35">
+
+          
           <motion.div
             className="about-sub-cont"
             viewport={{ once: false, amount: 0.5 }}
@@ -81,7 +88,7 @@ const About = () => {
               <span className="para-c">solve problems</span>.
             </p>
 
-            <p className="about-me-text">
+            <p className="about-me-text" >
               I am in my prefinal year of{" "}
               <span className="para-c">B. Tech</span> UG from{" "}
               <span className="para-c">NSUT Delhi </span>(erstwhile NSIT) in
@@ -218,6 +225,7 @@ const About = () => {
               </Button>
             </motion.div>
           </motion.div>
+        </div>
         </div>
       </motion.div>
     </section>
