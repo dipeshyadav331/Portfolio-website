@@ -5,7 +5,7 @@ import projectIcon from "../../assets/calander.png";
 
 const Project = () => {
   return (
-    <section id="project" style={{ backgroundColor: 'purple' }}>
+    <section id="project" className="aniProject" style={{ backgroundColor: 'purple' }}>
       <div className="project-cont">
         <div className="flex">
           <div className="abt-image-div">
