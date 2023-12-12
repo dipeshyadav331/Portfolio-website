@@ -24,21 +24,26 @@ const Project = () => {
             <hr className="short-hr project-hr" />
           </div>
         </div>
+          <div className="wrapper">
+            <div className="scrolls">
 
-        {projectData.map((items) => {
-          return (
-            <ProjectCard key={items.id} {...items}>
-              {items.stacks.map((item) => {
-                return (
-                  <span key={item} className="btn stacks_description">
-                    {item}
-                  </span>
-                );
-              })}
-            </ProjectCard>
-          );
-        })}
-      </div>
+                {projectData.map((items) => {
+                  return (
+                    <ProjectCard key={items.id} {...items}>
+                      {items.stacks.map((item) => {
+                        return (
+                          <span key={item} className="btn stacks_description">
+                            {item}
+                          </span>
+                        );
+                      })}
+                    </ProjectCard>
+                  );
+                })}
+            </div>
+          </div>
+          </div>
+       
     </section>
   );
 };
