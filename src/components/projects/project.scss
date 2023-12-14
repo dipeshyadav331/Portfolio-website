@@ -1,0 +1,75 @@
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center;
+ }
+
+  
+
+$finalHeight: 100px;
+$finalWidth: 3 * $finalHeight;
+$scrollBarHeight: 1px;
+
+::-webkit-scrollbar {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+::-webkit-scrollbar-button {
+  width: $scrollBarHeight;
+  height: $scrollBarHeight;
+}
+
+.aniProject{
+  height: 1600px;
+}
+
+.horizontal-scroll-wrapper {
+  left: 0;
+  width: 1350px;
+  height: 1300px;
+  margin: 10px;
+  padding-top: $scrollBarHeight;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-$finalHeight);
+  & > div {
+    background: rgb(255, 255, 255);
+    transform: rotate(90deg);
+  }
+}
+
+.squares {
+  padding: 0 0 0 0;
+  & > div {
+    width: 400px;
+    height: 1500px;
+    margin: 10px 0;
+  }
+}
+
+ .project-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+ }
+ 
+ .project-desc {
+    z-index: 2;
+ }
+ 
+ .project-hr {
+    width: 70%;
+ }
+ 
+ .project-head-text {
+    font-size: 30px;
+ }

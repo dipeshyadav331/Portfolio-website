@@ -1,11 +1,11 @@
 import ProjectCard from "../../cards/projectCard/ProjectCard";
-import "./project.css";
+import "./project.scss";
 import { projectData } from "../../Object Files/projectObject";
 import projectIcon from "../../assets/calander.png";
 
 const Project = () => {
   return (
-    <section id="project" className="aniProject" style={{ backgroundColor: 'purple' }}>
+    <section id="project" className="aniProject" style={{ backgroundColor: 'black' }}>
       <div className="project-cont">
         <div className="flex">
           <div className="abt-image-div">
@@ -24,7 +24,7 @@ const Project = () => {
             <hr className="short-hr project-hr" />
           </div>
         </div>
-        <div className="scrolls">
+        <div className="horizontal-scroll-wrapper squares">
 
          
                 {projectData.map((items) => {

@@ -19,14 +19,14 @@ const ProjectCard = ({
             {description.map((item, index) => (
               <div key={index}>
                 <li className="inside-des-project">{item.heading}</li>
-                <p>{item.brief}</p>
+                <p className="makeTextBlack" >{item.brief}</p>
                 <br />
               </div>
             ))}
           </ul>
         </p>
         <div className="flex stacks_description_cont">
-          <span style={{ color: 'white' }}>STACKS USED: </span> {children}
+          <span style={{ color: 'violet' }}>STACKS USED: </span> {children}
         </div>
 
         <div className="flex project-links-cont">

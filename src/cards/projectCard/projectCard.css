@@ -1,17 +1,17 @@
 .project-card-container {
     width: 80vw; 
     padding: .5rem;
+    min-width: 70vw;
     box-shadow: var(--box-shadow);
     border-radius: 5px;
     overflow: hidden;
     transition: var(--transition);
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 5px;
  }
 
- .project-card-container{
-   background-color:rgb(79, 0, 79);
-   border-radius: 15px;
-   display: inline-block;
- }
+
  .iframe_container{
    width: 60rem;
  }
@@ -23,8 +23,9 @@
  
  .inside-des-project {
    font-weight: bold;
+   font-size: medium;
    margin-left: 5px;
-   color: chartreuse;
+   color: rgb(152, 74, 0);
  }
 
  #dark .project-card-container {
@@ -76,7 +77,7 @@
  .project--title {
     font-size: 18px;
     font-weight: bold;
-    color: cyan;
+    color: rgb(214, 0, 132);
     text-decoration: underline;
  }
  
@@ -134,6 +135,10 @@
     text-justify: distribute-all-lines;
  }
  
+ .makeTextBlack{
+   color: black;
+ }
+
  .stacks_description_cont {
     justify-content: flex-start;
     flex-wrap: wrap;
