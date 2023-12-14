@@ -24,9 +24,9 @@ const Project = () => {
             <hr className="short-hr project-hr" />
           </div>
         </div>
-          <div className="wrapper">
-            <div className="scrolls">
+        <div className="scrolls">
 
+         
                 {projectData.map((items) => {
                   return (
                     <ProjectCard key={items.id} {...items}>
@@ -41,9 +41,7 @@ const Project = () => {
                   );
                 })}
             </div>
-          </div>
-          </div>
-       
+          </div> 
     </section>
   );
 };
