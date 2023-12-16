@@ -2,10 +2,8 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
-import ErrorPage from "./components/Error/Error";
 import Main from "./pages/Main";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
-import "../src/components/footer/Footer";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Lenis from "@studio-freight/lenis"; 
 
@@ -18,17 +16,7 @@ function App() {
   }
 
   requestAnimationFrame(raf);
-
-  const [theme, setTheme] = useState(
-    localStorage.getItem("themeColor")
-      ? localStorage.getItem("themeColor").toString()
-      : "dark"
-  );
-
-  useEffect(() => {
-    localStorage.setItem("themeColor", theme);
-  }, [theme]);
-
+ 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -38,15 +26,14 @@ function App() {
 
   return (
     <>
-      <div className="App" id={theme}>
+      <div className="App" id={"dark"}>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="*" element={<ErrorPage />} />
         </Routes>
 
-        <motion.div className="progress-bar" style={{ scaleX }} />
         <ScrollToTop />
         <footer className="flex1 column footer">
+          <small> Best viewed on desktop </small>
           <small>
             Designed & Built by <span className="cyan">Dipesh Yadav</span>
             <span className="alt-text TNP"></span>{" "}
