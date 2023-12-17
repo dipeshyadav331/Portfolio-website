@@ -1,17 +1,26 @@
 import "./projectCard.css";
- 
+
 const ProjectCard = ({
   liveSite,
   github,
   description,
   title,
   children,
-  ytlink
+  ytlink,
 }) => {
   return (
     <div className="project-card-container">
-        <iframe width="560" height="315" src={ytlink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen='allowfullscreen'></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src={ytlink}
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen="allowfullscreen"
+      ></iframe>
       <div>
+        <br />
         <p className="project--title">{title}</p>
         <br />
         <p className="project-desc">
@@ -19,26 +28,27 @@ const ProjectCard = ({
             {description.map((item, index) => (
               <div key={index}>
                 <li className="inside-des-project">{item.heading}</li>
-                <p className="makeTextBlack" >{item.brief}</p>
+                <p className="makeTextBlack">{item.brief}</p>
                 <br />
               </div>
             ))}
           </ul>
         </p>
+        <br />
         <div className="flex stacks_description_cont">
-          <span style={{ color: 'violet' }}>STACKS USED: </span> {children}
+          <span style={{ color: "teal" }}>STACKS USED: </span> {children}
         </div>
 
-        <div className="flex project-links-cont">
+        <div className="flex project-links-cont" style={{marginLeft:'15px'}}>
           <a
             href={github}
             target="blank"
             aria-label="view code base on github"
             className={`flex links__cont`}
           >
-            <span className="project-links">
+            {/* <span className="project-links">
               <i className="fa-brands fa-github"></i>
-            </span>
+            </span> */}
             <p className="btn link_text">GitHub</p>
           </a>
           <a
@@ -47,9 +57,9 @@ const ProjectCard = ({
             aria-label="view live site"
             className="flex links__cont"
           >
-            <span className="project-links">
+            {/* <span className="project-links">
               <i className="fa-solid fa-link"></i>
-            </span>
+            </span> */}
             <p className="btn link_text">Live Link</p>
           </a>
         </div>

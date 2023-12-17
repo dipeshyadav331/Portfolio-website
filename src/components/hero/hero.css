@@ -43,6 +43,9 @@
   border-radius: 20px; 
 }
  
+.cyann{
+  color: cyan
+}
 
 .hero-flex {
   display: flex;

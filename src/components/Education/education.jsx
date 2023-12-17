@@ -51,7 +51,7 @@ function education() {
     }
 }
   return (
-    <section id="education" style={{ backgroundColor: "white"}}>
+    <section id="education" className="aniEducation" style={{ backgroundColor: "white"}}>
        
       <div className="outeredu">
         <div className="out-inn">
@@ -68,6 +68,7 @@ function education() {
               <hr className="short-hr" />
             </div>
           </div>
+          <br />
           <br />
           <br />
         </div>
@@ -133,7 +134,7 @@ function education() {
                   <div className="grid2">
                     <p className="text1">Higher Secondary</p>
                     <a
-                      href="https://drive.google.com/file/d/1C1uNjEGC_Qiv-5Gmy2hAA_rerZMOyww9/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1avDZEyFGTbaIbFgr8p_kX7YDyNnV1dC7/view?usp=sharing"
                       target="blank"
                     >
                       <p className="report-card">
@@ -170,7 +171,7 @@ function education() {
                   <div className="grid2">
                     <p className="text1">Senior Secondary </p>
                     <a
-                      href="https://drive.google.com/file/d/1C1SnUfMb_iERJzrIywgplbwqokVrKGlb/view?usp=sharing"
+                      href="https://drive.google.com/file/d/120jWjCxVY7vOS7VKlcl0pjR3v460tpdx/view?usp=sharing"
                       target="blank"
                     >
                       <p className="report-card">

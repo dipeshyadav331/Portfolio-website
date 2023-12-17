@@ -42,26 +42,29 @@ const About = () => {
             I am in my prefinal year of <span className="para-c">B. Tech</span>{" "}
             UG from <span className="para-c">NSUT Delhi </span>(erstwhile NSIT)
             in
-            <span className="para-c"> Information Technology(IT)</span>
+            <span className="para-c"> Information Technology(IT) </span>
             and I will graduate in <span className="para-c">2025</span>. I am a
             highly motivated and technically proficient student with a{" "}
             <span className="para-c">passion </span>
             for <span className="para-c">problem-solving </span>
             and <span className="para-c">software development</span>, skilled in{" "}
-            <span className="para-c">Java, C++, JavaScript</span> and a range of{" "}
+            <span className="para-c">Java, C++, JavaScript, Kotlin</span> and a range of{" "}
             <span className="para-c">web technologies</span>, including{" "}
             <span className="para-c">React, Redux</span>, and{" "}
-            <span className="para-c">Node.js</span>, with a strong track record
+            <span className="para-c">NodeJs</span>, with a strong track record
             in <span className="para-c">competitive programming</span> and a
             commitment to <span className="para-c">leadership</span> and
             <span className="para-c"> learning</span>.
           </p>
+          <br />
+          <br />
 
           <div className="about-me-textt flexx left_align">
             <p className="ach-ie">
               <span className="ull">Achievements</span> :-
             </p>
-            <ul>
+            <br />
+            <ul style={{color:'black'}}>
               <li>
                 <h3>
                   <a
@@ -153,15 +156,14 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <br></br>
+          <br /> 
           <a
             href="https://drive.google.com/file/d/1FQh-jEs34fvCSzhPMj2-GOmtB_nf7hVg/view?usp=sharing"
             target="blank"
           >
             <Rounded target="blank">
-              <p>Resume </p>
-
-              <i className="fa-solid fa-download"></i>
+              <p style={{color:'black'}}>Resume </p>
+              <i style={{color:'black'}} className="fa-solid fa-download"></i>
             </Rounded>
           </a>
         </div>

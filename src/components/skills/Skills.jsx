@@ -45,6 +45,8 @@ const rightAboutVariant = {
 const Skills = () => {
   const phrase =
     "Immersing myself in the intricate world of programming languages fuels my curiosity. Each problem, with its unique complexities, drives me forward, whether it's delving into sophisticated data structures or tackling intricate challenges. Problem-solving isn't just a skill—it's my passion. Whether I'm unraveling abstract programming theories or architecting solutions for real-world scenarios, The mental stimulation I derive from each problem energizes me, driving me forward with enthusiasm and renewed vigor. I find pure joy in the puzzle of problem-solving.";
+  const skills =
+    "Eclipse , Git , Sublime , DBMS , VS Code , OOPS , GitHub , JSX , React , Automation , BootStrap , MongoDB , Scrapping , Java , Javascript , Node JS";
   const description = useRef(null);
   const isInView = useInView(description);
 
@@ -99,6 +101,7 @@ const Skills = () => {
                 viewport={{ once: false, amount: 0.5 }}
                 variants={leftAboutVariant}
               >
+              
                 <div className="makeitgrid">
                   <p>Eclipse</p>
                   <p>Git</p>
@@ -172,45 +175,38 @@ const Skills = () => {
             <hr />
             <br />
             <br />
-            <motion.div
-              className="about-main-container"
-              initial={"hidden"}
-              whileInView={"show"}
-              transition={{ staggerChildren: 0.2 }}
-            >
-              <motion.div
-                viewport={{ once: false, amount: 0.5 }}
-                variants={leftAboutVariant}
-              >
-                <div className="makeitgrid">
-                  <p>Eclipse</p>
-                  <p>Git</p>
-                  <p>Sublime Text</p>
-                  <p>DBMS</p>
-                  <p>VS Code</p>
-                  <p>OOPS</p>
-                  <p>GitHub</p>
-                  <p>JSX</p>
-                  <p>React</p>
-                  <p>Automation</p>
-                  <p>BootStrap</p>
-                  <p>MongoDB</p>
-                  <p>Web Scrapping</p>
-                  <p>Java</p>
-                  <p>Javascript</p>
-                  <p>Node JS</p>
+
+            {/* <div className="makeitgrid"> */}
+              <div ref={description} className={styles.description2}>
+                <div className={styles.body}>
+                  <p className="makeitgrid">
+                    {skills.split(",").map((word, index) => {
+                      return (
+                        <span key={index} className={styles.mask2}>
+                          <motion.span
+                            variants={slideUp}
+                            custom={index}
+                            animate={isInView ? "open" : "closed"}
+                            key={index}
+                          >
+                            {word}
+                          </motion.span>
+                        </span>
+                      );
+                    })}
+                  </p>
                 </div>
-              </motion.div>
-            </motion.div>
+              </div>
+            {/* </div> */}
           </div>
 
           <div className="righttech">
-          <h2>Creative Skills</h2>
-          <hr />
-          <br />
+            <h2>Creative Skills</h2>
+            <hr />
+            <br />
             <div ref={description} className={styles.description}>
               <div className={styles.body}>
-                <p className={styles.aboutPart}>
+                <p>
                   {phrase.split(" ").map((word, index) => {
                     return (
                       <span key={index} className={styles.mask}>
@@ -219,7 +215,6 @@ const Skills = () => {
                           custom={index}
                           animate={isInView ? "open" : "closed"}
                           key={index}
-                          className="textPart"
                         >
                           {word}
                         </motion.span>

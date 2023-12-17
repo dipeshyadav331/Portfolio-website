@@ -22,7 +22,7 @@
 }
 
 .text2:hover{
-    color:salmon
+    color:rgb(6, 90, 118)
 }
 
 .grid1 {
@@ -54,6 +54,7 @@
 
 .outeredu {
     display: grid;
+    margin-bottom: 18rem;
 }
 
 .circle-edu {
@@ -83,7 +84,7 @@
 }
 
 .report-card:hover{
-    color: gold;
+    color: rgb(255, 77, 0);
     cursor: pointer;
 }
 

@@ -45,7 +45,7 @@ const ContactForm = ({ contact }) => {
   };
 
   return (
-    <section id="contact" ref={contact}  style={{ backgroundColor: '' }}>
+    <section id="contact" ref={contact} style={{ backgroundColor: "white" }}>
       <div className="max-width flex column contact__cont_main">
         <div className="flex">
           <div className="abt-image-div contact_img_div">
@@ -57,6 +57,8 @@ const ContactForm = ({ contact }) => {
             <hr className="short-hr project-hr right_hr" />
           </div>
         </div>
+        <br />
+        <br />
         <motion.div
           className="max_content"
           initial={"hidden"}
@@ -68,14 +70,14 @@ const ContactForm = ({ contact }) => {
             style={{ overflow: "hidden" }}
           >
             <motion.div className="contact-sub-div" variants={rightVariant}>
-              <p className="contact-head-textt">
+              <p className="contact-head-textt" style={{color:'black'}}>
                 IF YOU WANT TO <span className="highlight_text"> HIRE ME </span>{" "}
                 OR HAVE OTHER <span className="highlight_text"> QUERIES </span>{" "}
                 , THEN{" "}
                 <span className="highlight_text"> KNOCK ME ANYTIME </span>.
               </p>
             </motion.div>
-            <div className="flex vertical_flex project-links-cont center-it">
+            {/* <div className="flex vertical_flex project-links-cont center-it">
               {myLinks.map((items) => {
                 return (
                   <div className="sys">
@@ -154,9 +156,9 @@ const ContactForm = ({ contact }) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <motion.div className="contact-sub-div-2" variants={leftVariant}>
+            <motion.div className="contact-sub-div-2" variants={leftVariant} style={{color:'black'}}>
               <Form nameRef={nameRef} />
             </motion.div>
           </FlatCard>

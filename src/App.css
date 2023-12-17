@@ -25,6 +25,15 @@ body #dark {
   justify-content: flex-start !important;
 }
 
+.self_name{
+  color: #e8680c;
+  font-weight: bold;
+}
+
+.footer{
+  margin-left: 100px;
+}
+
 .scroll_to_top {
   position: fixed;
   bottom: 40px;

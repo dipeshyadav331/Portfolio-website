@@ -1,5 +1,5 @@
 .contact-form-cont {
-    background: var(--primary-text);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,7 @@
     align-items: center;
     gap: 30px;
     color: var(--primary-bg);
-    border-radius: inherit;
+    /* border-radius: inherit; */
   }
   
   #contact {
@@ -65,6 +65,7 @@
     gap: 20px;
     position: relative;
     z-index: 3;
+    font-size: 2rem;
   }
   
   .contact-sub-div::after {
@@ -75,10 +76,11 @@
     position: absolute;
     bottom: 0%;
     z-index: 1;
-    border-radius: inherit; 
+    /* border-radius: inherit;  */
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: right bottom;
+    background: none;
     opacity: 0.2;
   }
   
@@ -146,7 +148,7 @@
     transform: translateY(-25px) translateX(-15px);
     display: flex;
     align-items: center;
-    background: var(--primary-text);
+    /* background: var(--primary-text); */
     font-size: 12px;
     z-index: 1;
     -webkit-appearance: none;
@@ -155,9 +157,10 @@
   
   .form-div input,
   .form-div textarea {
-    border: none;
-    outline: none;
-    box-shadow: var(--purple-box-shadow);
+    /* border: none; */
+    /* outline: none; */
+    /* box-shadow: var(--purple-box-shadow); */
+    border-color: black;
     padding: 1.5rem;
     border-radius: 5px;
     background: inherit;
@@ -165,8 +168,8 @@
     font-size: 13px;
     font-family: inherit !important;
     font-size: 14px;
-    -webkit-appearance: none;
-    appearance: none;
+    /* -webkit-appearance: none;
+    appearance: none; */
   }
   
   .form-div textarea {
@@ -178,7 +181,7 @@
   .form-div input:valid,
   .form-div textarea:valid {
     outline: none;
-    box-shadow: var(--purple-inset-box);
+    /* box-shadow: var(--purple-inset-box); */
     background: inherit;
     -webkit-appearance: none;
     appearance: none;
@@ -186,16 +189,16 @@
   
   .submit-btn {
     width: max-content;
-    box-shadow: var(--purple-box-shadow) !important;
+    /* box-shadow: var(--purple-box-shadow) !important; */
     padding: 1rem 3rem !important;
     background: inherit !important;
-    color: var(--primary-bg) !important;
     transform: translateY(-20px);
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
-    border: none;
+    border-color: black;
     cursor: pointer;
+    color: black;
   }
   
   .submit-btn:hover {
@@ -204,7 +207,7 @@
   
   .Message-me {
     text-align: right;
-    font-size: 18px;
+    font-size: 1.7rem;
   }
   
   .contact-links,
@@ -232,11 +235,7 @@
   
   .max_content {
     overflow: hidden;
-    box-shadow: var(--box-shadow);
-  }
-  
-  #dark .max_content {
-    box-shadow: var(--box-shadow-dark);
+    /* box-shadow: var(--box-shadow); */
   }
   
   /* ===========THANK YOU PAGE STYLING ========== */
@@ -267,7 +266,7 @@
   }
   
   .highlight_text{
-    color: black;
+    color: rgb(255, 23, 2);
     font-weight: bold; 
   }
  
@@ -291,6 +290,7 @@
   
   .contact__cont_main {
     width: 80%;
+    margin-bottom: 6rem;
   }
   
   .sys{

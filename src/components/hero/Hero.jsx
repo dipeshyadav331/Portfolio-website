@@ -77,7 +77,7 @@ const Hero = ({ onClick }) => {
                 A seasoned
                 <span className="alt-text"> Competitive Programmer</span> and a
                 <span className="alt-text"> Full Stack Developer</span> ,
-                Skilled in <span className="cyan">JAVA</span>
+                Skilled in <span className="cyann">JAVA</span>
               </h1>
 
               <div className="btn-div">

@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { motion, useScroll, useSpring } from "framer-motion";
-import Lenis from "@studio-freight/lenis"; 
+import Lenis from "@studio-freight/lenis";
 
 function App() {
   const lenis = new Lenis();
@@ -16,7 +16,7 @@ function App() {
   }
 
   requestAnimationFrame(raf);
- 
+
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -32,10 +32,13 @@ function App() {
         </Routes>
 
         <ScrollToTop />
-        <footer className="flex1 column footer">
-          <small> Best viewed on desktop </small>
-          <small>
-            Designed & Built by <span className="cyan">Dipesh Yadav</span>
+        <footer
+          className="flex1 column footer"
+          style={{ backgroundColor: "white" }}
+        >
+          <small style={{ color: "black" , marginLeft : "5px"}}> Best viewed on desktop </small>
+          <small style={{ color: "black" , marginLeft : "5px"}}>
+            Designed & Built by <span className="self_name">Dipesh Yadav</span>
             <span className="alt-text TNP"></span>{" "}
             <div className="giticon">
               <a

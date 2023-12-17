@@ -70,9 +70,6 @@ const Form = ({ nameRef }) => {
       "C4KKtrWEfqXACsNiR")
       .then(
         (result) => {
-          console.log(email );
-          console.log(result.text);
-          console.log("message sent");
           setIsEmailSent(true);
           setIsDisabled(true);
         },
@@ -106,6 +103,7 @@ const Form = ({ nameRef }) => {
           value={username}
           onChange={handleNameChange}
           ref={nameRef}
+          style={{ color: "black" }}
           required
         />
         <label htmlFor="name"> Name </label>
@@ -120,6 +118,7 @@ const Form = ({ nameRef }) => {
           id="email"
           value={email}
           onChange={handleEmailChange}
+          style={{ color: "black" }}
           required
         />
         <label htmlFor="email"> Email</label>
@@ -133,6 +132,7 @@ const Form = ({ nameRef }) => {
           id="message"
           value={message}
           onChange={handleMessageChange}
+          style={{ color: "black" }}
           spellCheck
           required
         />
@@ -140,8 +140,7 @@ const Form = ({ nameRef }) => {
         {errors.message && (
           <small className="error_message"> {errors.message} </small>
         )}
-      </div>
-
+      </div> 
       <input
         type="submit"
         disabled={isDisabled}
