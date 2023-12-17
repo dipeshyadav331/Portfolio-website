@@ -2,13 +2,13 @@ import "./hero.css";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import DipeshPhoto from "../../assets/dipesh.jpeg";
-import { useState } from "react";
-import ReactAudioPlayer from "react-audio-player";
-import song from "../../assets/song.mp3";
+import Rounded from "../../cards/RoundedButton/index.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-import Rounded from "../../cards/RoundedButton/index.jsx";
+import { useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
+import song from "../../assets/song.mp3";
 
 const Hero = ({ onClick }) => {
   const leftVariant = {
@@ -31,7 +31,7 @@ const Hero = ({ onClick }) => {
 
   const toggleAudio = () => {
     setIsPlaying(!isPlaying);
-  }; 
+  };
 
   return (
     <section id="home" className="aniHero">
@@ -49,15 +49,14 @@ const Hero = ({ onClick }) => {
               <FontAwesomeIcon icon={faPlay} bounce />
             )}
           </button>
-
           <div className="leftfram" data-scroll data-scroll-speed="-0.35">
-            {isPlaying && <ReactAudioPlayer src={song} autoPlay />}
+          {isPlaying && <ReactAudioPlayer src={song} autoPlay />}
             <motion.div className="hero-sub-cont-1" variants={leftVariant}>
               <p className="selfName">
                 Hi, <span className="wave">👋</span>
               </p>
               <div className="selfName">My self Dipesh</div>
-            
+
               <div className="flex left_align">
                 <span className="alt-text-yellow">
                   <Typewriter
