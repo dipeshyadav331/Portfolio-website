@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Mono&display=swap');
 
-#skill { 
-   
-}
-
+/* end */
 .aniSkill{
-   background-image: url('../../assets/skills_background2.jpg');
+   background-color: white;
 }
 
 .tech{
@@ -16,6 +13,7 @@
 
 .lefttech{
    width: 40%;
+   color: black;
 }
 
 .customFont{
@@ -26,15 +24,18 @@
    font-family: 'Roboto Mono', monospace;
 }
 
+
 .makeitgrid{
    display: grid;
    grid-template-columns: repeat(2 , 1fr);
    grid-template-rows: repeat(1 , 1fr);
    gap: 15px;
+   color: black;
 }
 
 .righttech{
    width: 52%;
+   color: black;
 }
 
 .my-skills-container {

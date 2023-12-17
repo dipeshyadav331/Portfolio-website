@@ -3,14 +3,12 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 0.2rem 1.2rem;
+    padding: 0.5rem 0.2rem;
     user-select: none;
-    position: fixed;
     top: 0;
     background: var(--primary-bg);
     left: 0;
     transition: var(--transition);
-    z-index: 100;
   }
   
   #dark .nav-cont {
@@ -18,37 +16,14 @@
   }
   
   .logo_img {
-    height: 55px !important;
-    width: 65px !important;
+    height: 43px !important;
+    width: 53px !important;
     padding: 0 !important;
     border-radius: 50%;
-    z-index: 2;
-    object-fit: cover;
   }
-  
-  .logo_text {
-    padding: 0 5px 0 30px;
-    box-shadow: var(--box-shadow);
-    z-index: 1;
-    margin-left: -30px;
-    border-radius: 5px;
-    color: #00dc25;
-    font-weight: 900;
-  }
-  
+ 
   #dark .logo_text {
     box-shadow: var(--box-shadow-dark);
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
   }
   
   .links-container {

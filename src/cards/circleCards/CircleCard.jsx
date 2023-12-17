@@ -36,7 +36,7 @@ const rightAboutVariant = {
   },
 };
 
-const CircleCard = ({ skillImage, logo_text, logo , percentage}) => {
+const CircleCard = ({logo_text , percentage}) => {
   return (
     <div className="outerskills">
       <motion.div
@@ -55,7 +55,7 @@ const CircleCard = ({ skillImage, logo_text, logo , percentage}) => {
             <p className="rightt">{percentage}</p>
         </div>
         <div className="meter">
-            <div className="systum" style={{ width: percentage }}>
+            <div className="encircle" style={{ width: percentage }}>
             </div>
         </div>
 

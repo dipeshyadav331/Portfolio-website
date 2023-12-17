@@ -14,13 +14,14 @@
     height: 10px;
     color: 5px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
 
-  .systum{ 
+  
+  .encircle{ 
     height: 10px;
     border-radius: 10px;
-    background-color: greenyellow;
+    background-color: rgb(254, 0, 0);
   }
 
   .temp{
@@ -32,58 +33,18 @@
       width: 65vw;
       display: flex; 
       justify-content: space-between;
+      color: black;
   }
   
   .yourSkill{
     font-weight: bold;
     font-size: 1.2rem;
   }
+
   .outerskills{
     display: grid;
     gap: 10px;
   }
 
-  .circle-card-cont {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: var(--primary-bg);
-    box-shadow: var(--box-shadow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.4rem;
-    cursor: pointer;
-    transition: var(--transition);
-  }
+
   
-  .logo_name {
-    position: absolute;
-    bottom: -29px;
-    left: 0;
-    right: 0;
-    text-transform: uppercase;
-    font-size: 11px;
-    text-align: center;
-    font-weight: 600;
-    opacity: 0;
-  }
-  
-  .circle-card-cont:hover {
-    scale: 1.2;
-    transition: var(--transition);
-  }
-  
-  .circle-card-cont:hover ~ .logo_name {
-    opacity: 1;
-  }
-  
-  #dark .circle-card-cont {
-    background-color: var(--primary-bg-dark);
-    box-shadow: var(--box-shadow-dark);
-  }
-  
-  .circle-img {
-    width: 80%;
-    height: 80%;
-  }

@@ -110,7 +110,7 @@ const Hero = ({ onClick }) => {
             </motion.div>
           </div>
 
-          <div className="rightfram" data-scroll data-scroll-speed="0.9">
+          <div className="rightfram" data-scroll data-scroll-speed="0.7">
             <img src={DipeshPhoto} alt="Dipesh_Photo" className="hero-img" />
           </div>
         </motion.div>
