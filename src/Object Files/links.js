@@ -36,6 +36,13 @@ const myLinks = [
     label: "connect with me on twitter ",
     text: "X"
   },
+  {
+    id: uuid(),
+    links: "https://discord.com/users/931883470685356082",
+    icons: "fa-brands fa-discord" ,
+    label: "connect with me on discord ",
+    text: "Discord"
+  },
 ];
 
 export default myLinks;

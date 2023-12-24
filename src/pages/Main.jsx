@@ -10,7 +10,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader/index.jsx";
 import NavBar from "../components/navbar/NavBar.jsx";
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import Social from "../components/Social/Social.jsx";
 
 const Main = () => {
   const contactClick = useRef("#contact");
@@ -52,6 +52,7 @@ const Main = () => {
       <Skills />
       <Education />
       <ContactForm contact={contactClick} />
+      <Social/>
     </div>
   );
 };
