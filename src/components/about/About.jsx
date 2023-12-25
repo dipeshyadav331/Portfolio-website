@@ -8,7 +8,8 @@ import Rounded from "../../cards/RoundedButton/index.jsx";
 
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const locomotiveScroll = new LocomotiveScroll();
+
+  // const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <section id="about" className="aniAbout">

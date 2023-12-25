@@ -10,7 +10,7 @@
 }
 
 body #dark {
-  background: var(--primary-bg-dark);
+  background-color: white;
   backdrop-filter: blur(100%);
   color: var(--white); 
   background-size: contain;
@@ -186,7 +186,7 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   right: 0;
-  height: 8px;
+  height: 9px;
   background: var(--red);
   background-color: #e8680c;
   transform-origin: 0%;

@@ -1,29 +1,22 @@
-import "./App.css";
-import { useEffect, useState } from "react";
+import "./App.css"; 
 import ScrollToTop from "./components/ScrollToTop";
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import { AiFillLinkedin, AiOutlineGithub } from "react-icons/ai";
-import { motion, useScroll, useSpring } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 
 function App() {
-  const lenis = new Lenis();
 
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
+  //creating problems with scroll offset
+  // const lenis = new Lenis();
 
-  requestAnimationFrame(raf);
+  // function raf(time) {
+  //   lenis.raf(time);
+  //   requestAnimationFrame(raf);
+  // }
 
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
+  // requestAnimationFrame(raf);
+ 
   return (
     <>
       <div className="App" id={"dark"}>

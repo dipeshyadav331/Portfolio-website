@@ -1,11 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import About from "../components/about/About";
 import ContactForm from "../components/contactForm/ContactForm";
 import Hero from "../components/hero/Hero";
 import Project from "../components/projects/Project";
 import Skills from "../components/skills/Skills";
 import Education from "../components/Education/education";
-import { useEffect, useState } from "react";
+import FloatNav from "../components/navbarfloat/navbarfloat";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader/index.jsx";
 import NavBar from "../components/navbar/NavBar.jsx";
@@ -27,7 +27,7 @@ const Main = () => {
     damping: 30,
     restDelta: 0.001,
   });
-
+    
   useEffect(() => {
     (async () => {
       setTimeout(() => {
@@ -38,6 +38,20 @@ const Main = () => {
     })();
   }, []);
 
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 1000) {
+       setVisible(true);
+    }  
+    else{
+      setVisible(false);
+    }
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+  
   return (
     <div>
       <AnimatePresence mode="wait">
@@ -46,13 +60,16 @@ const Main = () => {
 
       <motion.div className="progress-bar" style={{ scaleX }} />
       {!isLoading && <NavBar />}
+
       <Hero onClick={handleClick} />
+      
+      {!isLoading && visible && <FloatNav/>}
       <About />
       <Project />
       <Skills />
       <Education />
       <ContactForm contact={contactClick} />
-      <Social/>
+      <Social />
     </div>
   );
 };
