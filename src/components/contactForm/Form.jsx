@@ -145,7 +145,7 @@ const Form = ({ nameRef }) => {
         type="submit"
         disabled={isDisabled}
         value="Send"
-        className="submit-btn"
+        className="btnn"
       />
     </form>
   );

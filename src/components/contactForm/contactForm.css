@@ -29,13 +29,13 @@
   }
   
   .image-bpx {
-    width: 20px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     overflow: hidden;
   }
   .purple {
     box-shadow: var(--purple-box-shadow) !important;
-    z-index: 3 !important;
+    /* z-index: 3 !important; */
     background: inherit;
     border: none;
     cursor: pointer;
@@ -44,7 +44,7 @@
   .contact-head-text {
     font-size: 40px;
     text-transform: capitalize;
-    z-index: 2;
+    /* z-index: 2; */
   }
   
   .contact-head-textt { 
@@ -64,7 +64,7 @@
     flex-direction: column;
     gap: 20px;
     position: relative;
-    z-index: 3;
+    /* z-index: 3; */
     font-size: 2rem;
   }
   
@@ -75,7 +75,7 @@
     height: 100%;
     position: absolute;
     bottom: 0%;
-    z-index: 1;
+    /* z-index: 1; */
     /* border-radius: inherit;  */
     background-size: 50%;
     background-repeat: no-repeat;
@@ -128,7 +128,8 @@
     font-size: 16px;
     width: max-content;
     padding: 0.5rem 24px;
-    z-index: -1;
+    cursor: pointer;
+    /* z-index: -1; */
     transition: var(--transition);
   }
   
@@ -148,9 +149,9 @@
     transform: translateY(-25px) translateX(-15px);
     display: flex;
     align-items: center;
-    /* background: var(--primary-text); */
     font-size: 12px;
-    z-index: 1;
+    /* z-index: 1; */
+    color: #787672;
     -webkit-appearance: none;
     appearance: none;
   }
@@ -186,25 +187,49 @@
     -webkit-appearance: none;
     appearance: none;
   }
-  
-  .submit-btn {
-    width: max-content;
-    /* box-shadow: var(--purple-box-shadow) !important; */
-    padding: 1rem 3rem !important;
-    background: inherit !important;
-    transform: translateY(-20px);
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    border-color: black;
+
+  .btnn {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
     cursor: pointer;
-    color: black;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    background-color: transparent; /* Set initial background color */
   }
   
-  .submit-btn:hover {
-    box-shadow: var(--purple-inset-box) !important;
+  .btnn:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: 10rem;
+    z-index: 8;
+    transition: all .3s; /* Include transition property for smooth animation */
+    opacity: 0; /* Initially hide the after element */
   }
   
+  .btnn:hover:after {
+    width: 100%;
+    opacity: 1; /* Show the after element on hover */
+  }
+  
+  .btnn:hover {
+    color: #ababab;
+  }
+  
+  
+  
+
   .Message-me {
     text-align: right;
     font-size: 1.7rem;
@@ -258,7 +283,7 @@
   
   .thankyou_img {
     flex: 1;
-    z-index: 1;
+    /* z-index: 1; */
     animation: bounce_main 3s infinite;
     -webkit-animation: bounce_main 3s infinite;
     -webkit-appearance: none;
@@ -303,11 +328,11 @@
     text-align: left;
     font-size: 15px;
     font-weight: 600;
-    z-index: 4;
+    /* z-index: 4; */
   }
   
   .thank-you-desc {
-    z-index: 3;
+    /* z-index: 3; */
     font-size: 18px;
   }
   

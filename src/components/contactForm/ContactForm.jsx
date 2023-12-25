@@ -9,21 +9,7 @@ import { useRef } from "react";
 const ContactForm = ({ contact }) => {
   const nameRef = useRef();
 
-  const leftVariant = {
-    hidden: {
-      x: "-100%",
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.2,
-        duration: 3,
-      },
-    },
-  };
+  
   const rightVariant = {
     hidden: {
       x: "100%",

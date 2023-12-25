@@ -50,7 +50,7 @@ const Hero = ({ onClick }) => {
             )}
           </button>
           <div className="leftfram" data-scroll data-scroll-speed="-0.35">
-          {isPlaying && <ReactAudioPlayer src={song} autoPlay />}
+            {isPlaying && <ReactAudioPlayer src={song} autoPlay />}
             <motion.div className="hero-sub-cont-1" variants={leftVariant}>
               <p className="selfName">
                 Hi, <span className="wave">👋</span>

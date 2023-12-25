@@ -116,6 +116,19 @@ const About = () => {
                     href="https://codechef.com/users/yadavdipesh331"
                     target="blank"
                   >
+                    <span className="cyan">Rank 62</span>
+                  </a>{" "}
+                  in CodeChef Starters 113 out of{" "}
+                  <span className="cyan"> 25065 </span> Participants
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Global{" "}
+                  <a
+                    href="https://codechef.com/users/yadavdipesh331"
+                    target="blank"
+                  >
                     <span className="cyan">Rank 73</span>
                   </a>{" "}
                   in CodeChef Starters 83 out of{" "}
@@ -124,7 +137,7 @@ const About = () => {
               </li>
               <li>
                 <h3>
-                  Golbal{" "}
+                  Global{" "}
                   <a
                     href="https://codeforces.com/profile/yadavdipesh"
                     target="blank"
@@ -143,6 +156,16 @@ const About = () => {
                   </a>{" "}
                   in Leetcode Weekly 348 out of{" "}
                   <span className="cyan"> 6000+ </span> Participants
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  India{" "}
+                  <a href="https://leetcode.com/yadavdipesh" target="blank">
+                    <span className="cyan"> Rank 387</span>
+                  </a>{" "}
+                  in Leetcode BiWeekly 119 out of{" "}
+                  <span className="cyan"> 5000+ </span> Participants
                 </h3>
               </li>
               <li>

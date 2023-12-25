@@ -34,7 +34,7 @@ const myLinks = [
     links: "https://x.com/yadavdipesh331",
     icons: "fa-brands fa-x-twitter" ,
     label: "connect with me on twitter ",
-    text: "X"
+    text: "Twitter"
   },
   {
     id: uuid(),
