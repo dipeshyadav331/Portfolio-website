@@ -1,8 +1,5 @@
-import { v4 as uuid } from "uuid";
-
 export const projectData = [
   {
-    id: uuid(),
     ytlink: "https://www.youtube.com/embed/ri0Ph8kFG4k?si=OJaNjCcxKm9a3IAP",
     title: "VibeVerse (Social Media Platform) - Full Stack Project",
     description: [{heading: "JWT Authentication" , brief: "To ensure the utmost security, Vibevers utilizes JSON Web Tokens (JWT) for authentication. Every visit to the platform is authenticated, guaranteeing that only authorized users gain access to their accounts and data."} , 
@@ -19,7 +16,6 @@ export const projectData = [
     github: "https://github.com/dipeshyadav331/VibeVerse",
   },
   {
-    id: uuid(),
     ytlink: "https://www.youtube.com/embed/fUXonYjtxt8?si=asAnvTyUIrnzFWZE",
     title: "Marketify (Online Shopping Platform) - Full Stack Project",
     description: [{heading: "Backend Management using Strapi" , brief: "Used Strapi, a powerful content management system, to build a robust backend. This enabled me to easily add, update, and manage product listings with images, descriptions, and pricing."} , 
@@ -34,7 +30,6 @@ export const projectData = [
     github : "https://github.com/dipeshyadav331/marketplace-frontend"
   },
   {
-    id: uuid(),
     ytlink: "https://www.youtube.com/embed/G8oa8VlBf60",
     title: "Portfolio Website",
     description: [{heading: "React" , brief: "At the core of my portfolio site is React, a dynamic JavaScript library renowned for its ability to create rich, interactive user interfaces. React's component-based architecture empowers me to craft a responsive and aesthetically pleasing site that adapts seamlessly to different devices and screen sizes."} , 

@@ -7,7 +7,8 @@
     overflow: hidden;
     /* transition: var(--transition); */
     /* border-radius: 15px; */
-    height: 5px;
+    height: 5px; 
+    padding-top: 250px;
  }
 
 
@@ -23,8 +24,8 @@
  .inside-des-project {
    font-weight: bold;
    font-size: medium;
-   margin-left: 5px; 
-   color: rgb(9, 89, 62);
+   margin-left: 25px; 
+   color: rgb(246, 255, 0);
  }
 
  #dark .project-card-container {
@@ -32,7 +33,7 @@
     background-color:rgb(255, 255, 255);
  }
  
-  
+
 
  .hiddenClass {
     display: none;
@@ -47,7 +48,9 @@
     width: 100%;
  }
  
-  
+.link_text{
+   margin-left: 30px;
+}
  
 
  .project--title {
@@ -79,7 +82,15 @@
  
  .project--title {
     font-size: 17px;
+    margin-left: 5px;
+    font-size: 1.4rem;
  }
+
+ .project--title-ins {
+      color: orange;
+      padding: 5px 0px 3px 8px;
+      font-size: 1.7rem;
+}
  
  .project-desc {
     font-size: 14px;
@@ -87,7 +98,10 @@
  }
  
  .makeTextBlack{
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   margin-left: 25px;
+   margin-top: 4px;
+   margin-right: 4px;
  }
 
  .stacks_description_cont {

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
+ 
+.layer {
+  z-index: -1;
+  position: absolute;
+  top: 250px;
+  width: 50rem;
+  min-height: 25rem;
+    // margin-left: 15px;
+    // margin-right: 8px;
+  border-radius: 5px;
+  background: black;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.5s ease;
+  > * {
+    margin: 0;
+  }
+}
+
+.clicked {
+  transition: all 0.5s ease;
+  transform: scale(1);
+  z-index: 100;
+  opacity: 1;
+  p, a {
+    opacity: 1;
+  }
+}
+
+
+// .projectDescription{
+//     color: black;
+//     position: absolute;
+//     background-color: aquamarine;
+//     height: 50rem;
+//     width: 80%;
+//     /* padding-bottom: 100px; */
+//     overflow: scroll;
+//     z-index: 1000001;
+//     top: 250px; 
+// }
+ 
+.close{ 
+    position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #902121;
+  cursor: pointer;
+}
+ 
