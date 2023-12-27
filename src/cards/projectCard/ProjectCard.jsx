@@ -1,7 +1,7 @@
-import "./projectCard.css";
+import "./projectCard.scss";
 import { useState } from "react";
-import ProjectDescription from "../projectDescription/projectDescription.jsx";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 const ProjectCard = ({
   liveSite,
   github,
@@ -12,9 +12,6 @@ const ProjectCard = ({
 }) => {
   const [visible, setvisible] = useState(false);
 
-  const close = () => {
-    setvisible(!visible);
-  };
   return (
     <div className="project-card-container">
       <iframe
@@ -30,53 +27,54 @@ const ProjectCard = ({
         <br />
         <p className="project--title">{title}</p>
         <br />
-        {/* <p className="project-desc">
-          <ul>
-            {description.map((item, index) => (
-              <div key={index}>
-                <li className="inside-des-project">{item.heading}</li>
-                <p className="makeTextBlack">{item.brief}</p>
-                <br />
-              </div>
-            ))}
-          </ul>
-        </p> */}
-        {/* <br /> */}
         <div className="flex stacks_description_cont">
           <span style={{ color: "teal" }}>STACKS USED: </span> {children}
         </div>
 
-        <div className="flex project-links-cont" style={{ marginLeft: "15px" }}>
-          <a
-            href={github}
-            target="blank"
-            className={`flex links__cont`}
-          >
-            {/* <span className="project-links">
-              <i className="fa-brands fa-github"></i>
-            </span> */}
-            <p className="btn link_text">GitHub</p>
+        <br /> 
+
+        <p className="animated-button" onClick={() => setvisible(!visible)}>
+          {" "}
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          {visible ? "Description" : "Close"}
+        </p>
+
+        <div className="git_inline">
+          <a href={github}>
+          <button class="blob-btn" href="https://www.google.com">
+            Github
+            <span class="blob-btn__inner">
+              <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+              </span>
+            </span>
+          </button>
           </a>
-          <a
-            href={liveSite}
-            target="blank"
-            className="flex links__cont"
-          >
-            {/* <span className="project-links">
-              <i className="fa-solid fa-link"></i>
-            </span> */}
-            <p className="btn link_text">Live Link</p>
+          <a href={liveSite}>
+          <button class="blob-btn">
+            Live Link
+            <span class="blob-btn__inner">
+              <span class="blob-btn__blobs">
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+                <span class="blob-btn__blob"></span>
+              </span>
+            </span>
+          </button>
           </a>
         </div>
-        <br />
-        <br />
-
-        {/* <div className="toplayer"> */}
-        <button onClick={() => setvisible(!visible)}> {visible ? 'Description' : 'Close'}</button>
-        {/* </div> */}
+        
+  
         <div className={visible ? "layer" : "layer clicked"}>
           <button className="close" onClick={() => setvisible(!visible)}>
-            Close
+            <FontAwesomeIcon icon={faX} fade size="sm" />
           </button>
           <p className="project--title-ins">{title}</p>
 
@@ -84,7 +82,6 @@ const ProjectCard = ({
           <p className="project-desc">
             <ul>
               {description.map((item, index) => (
-                
                 <div key={index}>
                   <li className="inside-des-project">{item.heading}</li>
                   <p className="makeTextBlack">{item.brief}</p>
@@ -95,10 +92,6 @@ const ProjectCard = ({
           </p>
         </div>
       </div>
-
-      {/* {visible && (
-        <ProjectDescription className="chkposabs" handleClick={close} />
-      )} */}
     </div>
   );
 };

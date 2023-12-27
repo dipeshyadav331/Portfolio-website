@@ -1,8 +1,5 @@
 .flatCard-main {
     padding: 1rem;
-    box-shadow: var(--box-shadow);
-    /* border-radius: 5px; */
-    transition: var(--transition);
     margin: auto;
  }
  

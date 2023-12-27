@@ -48,7 +48,6 @@ const Navbarfloat = () => {
           </div>
         </div>
 
-        {/* svg ring container */}
         <div className="burger-ring">
           <svg className="svg-ring">
             <path
@@ -61,7 +60,6 @@ const Navbarfloat = () => {
             />
           </svg>
         </div>
-        {/* the masked path that animates the fill to the ring */}
         <svg width="0" height="0">
           <mask id="mask">
             <path

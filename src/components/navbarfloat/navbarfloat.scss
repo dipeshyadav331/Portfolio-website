@@ -76,7 +76,6 @@ $scale: 1;
   height: 68px;
 }
 
-// what this does is create a small square that I then rotate behind an svg mask, giving the apparence of the line animating
 .path-rotation {
   height: 34px;
   width: 34px;
@@ -93,7 +92,6 @@ $scale: 1;
   }
 }
 
-// box rotation animation
 @keyframes rotate-out {
   0% {
     transform: rotate(0deg);
@@ -118,9 +116,7 @@ $scale: 1;
   }
 }
 
-// offset moves
-// dasharray is the dash size
-// need to be able to control dash space size.
+
 
 .hamburglar.is-open {
   .path {
@@ -174,9 +170,6 @@ $scale: 1;
 }
 
 
-
-// All good burgers need filling!
-
 .burger-icon {
   position: absolute;
   padding: 20px 16px;
@@ -210,19 +203,11 @@ $scale: 1;
   bottom: 0;
   transform-origin: 34px 2px;
 }
-//.burger-filling {
-//  @include transition(all,($animation/2.5),ease-in-//out);
-//}
-// relative parent is the button
+
 .burger-filling {
   top: 12px;
 }
 
-
-
-
-
-// burger ring container
 .burger-ring {
   position: absolute;
   top: 0;
@@ -236,8 +221,6 @@ $scale: 1;
   height: 68px;
 }
 
-
-// bun animations 
 .hamburglar.is-open {
   .burger-bun-top {
     animation: bun-top-out $animation linear normal;
@@ -346,8 +329,6 @@ $scale: 1;
   }
 }
 
-
-// burger filling
 .hamburglar.is-open {
   .burger-filling {
     animation: burger-fill-out $animation linear normal;

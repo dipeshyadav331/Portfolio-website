@@ -29,7 +29,7 @@ const Socials = () => {
   };
 
   const calculateDelay = (index) => {
-    return index * 0.15; // Adjust the delay factor as needed
+    return index * 0.15; 
   };
 
   return (
@@ -49,7 +49,7 @@ const Socials = () => {
                   show: {
                     opacity: 1,
                     transition: {
-                      delay: calculateDelay(index), // Set delay based on index
+                      delay: calculateDelay(index), 
                     },
                   },
                 }}

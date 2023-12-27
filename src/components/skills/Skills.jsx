@@ -1,46 +1,11 @@
 import "./skills.css";
 import skill from "../../assets/start-removebg-preview.png";
-import CircleCard from "../../cards/circleCards/CircleCard";
+import CircleCard from "../../cards/skillCards/skillCard.jsx";
 import skillData from "../../Object Files/skillData";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { slideUp, opacity } from "./animation";
+import { slideUp } from "./animation";
 import styles from "./style.module.css";
-import Rounded from "../../cards/RoundedButton/index.jsx";
-
-const leftAboutVariant = {
-  hidden: {
-    x: "-100%",
-    opacity: 0,
-    scale: 0,
-  },
-  show: {
-    x: 0,
-    opacity: 1,
-    rotate: 0,
-    scale: 1,
-    transition: {
-      type: "linear",
-      bounce: 0,
-      duration: 1,
-    },
-  },
-};
-const rightAboutVariant = {
-  hidden: {
-    x: "100%",
-    opacity: 0,
-  },
-  show: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      type: "linear",
-      bounce: 0,
-      duration: 1,
-    },
-  },
-};
 
 const Skills = () => {
   const phrase =
@@ -106,7 +71,6 @@ const Skills = () => {
                   </p>
                 </div>
               </div>
-            {/* </div> */}
           </div>
 
           <div className="righttech">

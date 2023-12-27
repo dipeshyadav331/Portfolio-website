@@ -4,7 +4,7 @@ import Scrollspy from "react-scrollspy";
 import navData from "../../Object Files/nav";
 import dp from "../../assets/WhatsApp Image 2023-10-23 at 1.43.52 PM.jpeg";
 
-const NavBar = ({ onClick, children }) => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleIsOpen = () => {

@@ -1,17 +1,11 @@
 import "./about.css";
 import microphone from "../../assets/about.png";
-
-import LocomotiveScroll from "locomotive-scroll";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Rounded from "../../cards/RoundedButton/index.jsx";
+import projectIcon from "../../assets/calander.png";
 
 const About = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  // const locomotiveScroll = new LocomotiveScroll();
-
   return (
+    <>
     <section id="about" className="aniAbout">
       <div className="about-container">
         <div className="delll">
@@ -192,7 +186,26 @@ const About = () => {
           </a>
         </div>
       </div>
-    </section>
+            </section>
+
+      <div className="flex project_heading">
+          <div className="abt-image-div">
+            <img
+              src={projectIcon}
+              alt="3d calender icon"
+              className="about-image"
+            />
+          </div>
+
+          <div>
+            <h1 className="project-head-text alt-text">
+              {" "}
+              My Development Projects
+            </h1>
+            <hr className="short-hr project-hr" />
+          </div>
+        </div>
+    </>
   );
 };
 

@@ -12,8 +12,7 @@
   --purple-inset-box: inset 1px 1px 10px #44255c, inset -1px -1px 10px #7e45aa;
   --white: #e4d8d8;
   --yellow: #fabb37;
-
-  /* DARK THEME VARIABLE */
+ 
   --primary-bg-dark: #241e1e;
   --box-shadow-dark: 5px 5px 5px #0b0b0b, -2px -2px 5px #000000;
   --inset-box-dark: inset 5px 1px 15px #110d0d, inset -3px -5px 15px #110d0d;
@@ -56,7 +55,6 @@ section {
 
 @media (max-width : 1440px) {
   section {
-    /* min-height: 100vh; */
     padding: 7rem 2rem;
   }
 }
