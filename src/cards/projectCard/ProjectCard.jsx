@@ -10,7 +10,7 @@ const ProjectCard = ({
   children,
   ytlink,
 }) => {
-  const [visible, setvisible] = useState(false);
+  const [visible, setvisible] = useState(true);
 
   return (
     <div className="project-card-container">
