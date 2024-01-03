@@ -14,6 +14,7 @@ export const projectData = [
     stacks: ["React","MongoDB","ExpressJS", "NodeJS" , "JSX" , "API"],
     liveSite: "https://sea-turtle-app-briqw.ondigitalocean.app/",
     github: "https://github.com/dipeshyadav331/VibeVerse",
+    imgLink: "https://i.ibb.co/zGd1K8c/Screenshot-2024-01-04-at-2-10-19-AM.png"
   },
   {
     ytlink: "https://www.youtube.com/embed/fUXonYjtxt8?si=asAnvTyUIrnzFWZE",
@@ -27,7 +28,8 @@ export const projectData = [
                 ],
     stacks: ["React" , "API" , "Strapi" , "Redux" , "SASS" , "Stripe" , "Axios"],
     liveSite: "https://marketplace-mw28.onrender.com/",
-    github : "https://github.com/dipeshyadav331/marketplace-frontend"
+    github : "https://github.com/dipeshyadav331/marketplace-frontend",
+    imgLink: "https://i.ibb.co/6Pw8WPc/Screenshot-2024-01-04-at-2-11-33-AM.png"
   },
   {
     ytlink: "https://www.youtube.com/embed/G8oa8VlBf60",
@@ -39,7 +41,8 @@ export const projectData = [
                   ],
     stacks: ["React", "CSS", "JSX" , "Framer-motion"],
     liveSite: "https://yadavdipesh.live/",
-    github: "https://github.com/dipeshyadav331/Portfolio-website"
+    github: "https://github.com/dipeshyadav331/Portfolio-website",
+    imgLink: "https://i.ibb.co/hsQ6vDL/Screenshot-2024-01-04-at-2-09-05-AM.png"
   },
 
 ];

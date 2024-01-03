@@ -9,29 +9,30 @@ const ProjectCard = ({
   title,
   children,
   ytlink,
+  imgLink
 }) => {
   const [visible, setvisible] = useState(true);
-
+  
+  console.log({children});
   return (
     <div className="project-card-container">
-      <iframe
-        width="560"
-        height="315"
-        src={ytlink}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen="allowfullscreen"
-      ></iframe>
+      <div className="project_image">
+        <img
+          src={imgLink}
+          alt="project_image"
+        />
+      </div>
       <div>
         <br />
         <p className="project--title">{title}</p>
         <br />
         <div className="flex stacks_description_cont">
-          <span style={{ color: "teal" }}>STACKS USED: </span> {children}
+          <span style={{ color: "teal" }}>STACKS USED: </span> 
+          
+          <span style={{color: "black"}}>{children}</span>
         </div>
 
-        <br /> 
+        <br />
 
         <p className="animated-button" onClick={() => setvisible(!visible)}>
           {" "}
@@ -39,39 +40,51 @@ const ProjectCard = ({
           <span></span>
           <span></span>
           <span></span>
-          {visible ? "Description" : "Close"}
+          {visible ? "Description" : "Video"}
         </p>
 
         <div className="git_inline">
           <a href={github}>
-          <button class="blob-btn" href="https://www.google.com">
-            Github
-            <span class="blob-btn__inner">
-              <span class="blob-btn__blobs">
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
+            <button class="blob-btn" href="https://www.google.com">
+              Github
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
           </a>
           <a href={liveSite}>
-          <button class="blob-btn">
-            Live Link
-            <span class="blob-btn__inner">
-              <span class="blob-btn__blobs">
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
-                <span class="blob-btn__blob"></span>
+            <button class="blob-btn">
+              Live Link
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
               </span>
-            </span>
-          </button>
+            </button>
+          </a>
+          <a href={ytlink} target="blank">
+            <button class="blob-btn">
+              Demo
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
           </a>
         </div>
-        
-  
+
         <div className={visible ? "layer" : "layer clicked"}>
           <button className="close" onClick={() => setvisible(!visible)}>
             <FontAwesomeIcon icon={faX} fade size="sm" />

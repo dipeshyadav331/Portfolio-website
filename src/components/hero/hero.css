@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Work+Sans:wght@6=700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
 #home {
   padding: 0;
 }
@@ -14,6 +18,26 @@
   border-color: cadetblue;
 }
 
+.selfName{
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 10px;
+}
+
+.hero-main-text{
+  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  color: #c7cad6;
+}
+
+.college_desc{
+  margin-top: 20px;
+  margin-left: 5px;
+  color: #c6c9d5;
+  margin-bottom: 20px;
+  width: 70%;
+  font-family: 'Roboto Mono', monospace;
+}
+
 .parent[data-isOpen="true"] {
   width: 100%;
   height: 100%;
@@ -25,9 +49,8 @@
 }
 
 .rightfram{
-  width: 40%;
-  margin-left: 10%;
-  margin-bottom: 4%;
+  width: 40%; 
+  margin-bottom: 10%;
 }
 
 .hero-main-cont {
@@ -62,9 +85,9 @@
 }
 
 .hero-img {
-  width: 80%;
-  height: 80%;
-  border-radius: 2%;
+  width: 90%;
+  height: 60%;
+  /* border-radius: 50%; */
 }
 
 .hero-sub-cont-1 {
@@ -72,14 +95,18 @@
   flex-direction: column;
   font-weight: 600;
   font-size: 18px;
-  gap: 10px;
+  /* gap: 10px; */
   flex: 1;
 }
 
 .aniHero{
-  background-image: url(../../assets/hero_background.jpg);
+  /* background-image: url(../../assets/hero_background.jpg); */
+  background-color: #000000;
 }
 
+.alt-text2 {
+  color: #ffffff;
+}
 .hero-subtext {
   color: var(--black);
   display: flex;
@@ -106,6 +133,7 @@
    font-size: inherit;
    border: none;
    cursor: pointer;
+   color: #c7cad6;
 }
 
 .btn-div {

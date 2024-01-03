@@ -11,6 +11,11 @@
     padding-top: 250px;
  }
 
+.project_image{
+  width: 560px;
+  height: 315px;
+  overflow: hidden;
+}
 
  .iframe_container{
    width: 60rem;
@@ -110,7 +115,7 @@
     font-size: 13px;
     font-weight: 500;
     /* z-index: 2; */
-    color: rgb(255, 0, 0);
+    color: rgb(154, 0, 0);
  }
  
  .stacks_description {
@@ -118,6 +123,7 @@
     font-weight: 600;
     position: relative;
     padding: 5px;
+    color: black;
  }
  
  .link_text {

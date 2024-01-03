@@ -74,7 +74,7 @@ const About = () => {
               <li>
                 <h3>
                   <a href="https://leetcode.com/yadavdipesh" target="blank">
-                    <span className="cyan">Knight (1900+) </span>
+                    <span className="cyan">Knight (1950+) </span>
                   </a>{" "}
                   at Leetcode
                 </h3>
@@ -111,6 +111,19 @@ const About = () => {
                     href="https://codechef.com/users/yadavdipesh331"
                     target="blank"
                   >
+                    <span className="cyan">Rank 54</span>
+                  </a>{" "}
+                  in CodeChef Starters 115 out of{" "}
+                  <span className="cyan"> 26446 </span> Participants
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Global{" "}
+                  <a
+                    href="https://codechef.com/users/yadavdipesh331"
+                    target="blank"
+                  >
                     <span className="cyan">Rank 62</span>
                   </a>{" "}
                   in CodeChef Starters 113 out of{" "}
@@ -128,6 +141,19 @@ const About = () => {
                   </a>{" "}
                   in CodeChef Starters 83 out of{" "}
                   <span className="cyan"> 25247 </span> Participants
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  Global{" "}
+                  <a
+                    href="https://codeforces.com/profile/yadavdipesh"
+                    target="blank"
+                  >
+                    <span className="cyan">Rank 533 </span>
+                  </a>
+                  in Codeforces Round 905 out of{" "}
+                  <span className="cyan"> 25518 </span> Participants{" "}
                 </h3>
               </li>
               <li>

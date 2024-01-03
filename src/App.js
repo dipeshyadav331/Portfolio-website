@@ -32,7 +32,7 @@ function App() {
         >
           <small style={{ color: "black" , marginLeft : "5px"}}> Best viewed on desktop </small>
           <small style={{ color: "black" , marginLeft : "5px"}}>
-            Designed & Built by <span className="self_name">Dipesh Yadav</span>
+            Designed & Developed by <span className="self_name">Dipesh Yadav</span>
             <span className="alt-text TNP"></span>{" "}
             <div className="giticon">
               <a
