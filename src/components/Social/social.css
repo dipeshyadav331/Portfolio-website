@@ -3,11 +3,7 @@
     background-color: white;
     color: black;
     padding-left: 23%;
-    padding-bottom: 35rem;
-}
-
-.sys{
-    /* padding: 2px; */
+    padding-bottom: 4rem;
 }
 
 .circle_socials{
@@ -35,4 +31,30 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 280px;
+    padding-bottom: 9rem;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width : 600px) {
+    .socials{
+        padding-left: 5%;
+    }
+    .flex_socials{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 160px;
+        padding-bottom: 5rem;
+    }
+
+    .circle_socials{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hide{
+        display: contents;
+    }
 }

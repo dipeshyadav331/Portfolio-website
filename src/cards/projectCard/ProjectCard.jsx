@@ -9,27 +9,24 @@ const ProjectCard = ({
   title,
   children,
   ytlink,
-  imgLink
+  imgLink,
 }) => {
   const [visible, setvisible] = useState(true);
-  
-  console.log({children});
+
+  console.log({ children });
   return (
     <div className="project-card-container">
       <div className="project_image">
-        <img
-          src={imgLink}
-          alt="project_image"
-        />
+        <img src={imgLink} alt="project_image" />
       </div>
       <div>
         <br />
         <p className="project--title">{title}</p>
         <br />
         <div className="flex stacks_description_cont">
-          <span style={{ color: "teal" }}>STACKS USED: </span> 
-          
-          <span style={{color: "black"}}>{children}</span>
+          <span style={{ color: "teal" }}>STACKS USED: </span>
+
+          <span style={{ color: "black" }}>{children}</span>
         </div>
 
         <br />

@@ -11,7 +11,7 @@ const Skills = () => {
   const phrase =
     "Immersing myself in the intricate world of programming languages fuels my curiosity. Each problem, with its unique complexities, drives me forward, whether it's delving into sophisticated data structures or tackling intricate challenges. Problem-solving isn't just a skill—it's my passion. Whether I'm unraveling abstract programming theories or architecting solutions for real-world scenarios, The mental stimulation I derive from each problem energizes me, driving me forward with enthusiasm and renewed vigor. I find pure joy in the puzzle of problem-solving.";
   const skills =
-    "Eclipse , Git , Sublime , DBMS , VS Code , OOPS , GitHub , JSX , React , Automation , BootStrap , MongoDB , Scrapping , Java , Javascript , Node JS";
+    "Eclipse , Git , Sublime , DBMS , VS Code , OOPS , GitHub , JSX , React , Automation , Kotlin , MongoDB , Scrapping , Java , Javascript , Node JS";
   const description = useRef(null);
   const isInView = useInView(description);
 
@@ -49,10 +49,10 @@ const Skills = () => {
           <div className="lefttech">
             <h2>Technologies</h2>
             <hr />
+            <br /> 
             <br />
-            <br />
-              <div ref={description} className={styles.description2}>
-                <div className={styles.body}>
+              <div>
+                <div>
                   <p className="makeitgrid">
                     {skills.split(",").map((word, index) => {
                       return (

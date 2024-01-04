@@ -6,18 +6,6 @@
   padding: 0;
 }
 
-.parent {
-  background: white;
-  width: 350px;
-  height: 400px;
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  cursor: pointer;
-  border-radius: 10px;
-  border-color: cadetblue;
-}
-
 .selfName{
   font-family: 'Space Grotesk', sans-serif;
   margin-bottom: 10px;
@@ -37,12 +25,7 @@
   width: 70%;
   font-family: 'Roboto Mono', monospace;
 }
-
-.parent[data-isOpen="true"] {
-  width: 100%;
-  height: 100%;
-}
-
+ 
 .leftfram{
   width: 60%; 
   margin-bottom: 10%;
@@ -62,8 +45,7 @@
   align-self: start;
   align-self: flex-end;
   margin-top: 6rem;
-  justify-content: center; 
-  border-radius: 20px; 
+  justify-content: center;  
 }
  
 .cyann{
@@ -158,6 +140,41 @@
 }
 
 @media (max-width: 600px) {
+  .leftfram{
+    width: 90%;
+    margin-left: 25px;
+    font-weight: 1.5rem;
+  }
+
+  .hero-main-cont{
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .rightfram{
+      margin-left: 5%;
+  }
+
+  .hidediv{
+    display: none;
+  }
+
+  .hero-img{
+    width: 200%;
+    height: auto;
+  }
+
+  .college_desc{
+    width: 80%;
+    font-size: small;
+  }
+
+  .aniHero{
+    margin-left: 0;
+    padding: 0; 
+  }
+
   .hero-flex {
     grid-template-columns: 1fr;
     padding: 4rem 0 0;
@@ -165,10 +182,6 @@
 
   .left_align {
     display: none;
-  }
-
-  .wave {
-    font-size: 20px;
   }
 
   .hero-main-text {

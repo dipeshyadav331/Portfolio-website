@@ -74,22 +74,7 @@ const Socials = () => {
           })}
         </div>
       </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+ 
       <div className="flex_socials">
         <motion.div
           className="about-main-container"
@@ -143,6 +128,22 @@ const Socials = () => {
                 <Rounded className="circle_socials">
                   <img className="image-bpx" src={codechefPfp} alt="" />
                   <p className="p_of_social">CodeChef</p>
+                </Rounded>
+              </a>
+            </div>
+            </motion.div>
+            <motion.div
+              viewport={{ once: false, amount: 0.5 }}
+              variants={leftAboutVariant}
+            >
+            <div className="hide">
+              <a
+                href="https://www.codechef.com/users/yadavdipesh331"
+                target="blank"
+              >
+                <Rounded className="circle_socials">
+                  <img className="image-bpx" src={atcoderPfp} alt="" />
+                  <p className="p_of_social">Atcoder</p>
                 </Rounded>
               </a>
             </div>
