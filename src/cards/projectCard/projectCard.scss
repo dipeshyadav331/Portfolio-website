@@ -38,7 +38,9 @@
     background-color:rgb(255, 255, 255);
  }
  
-
+.mobile{
+  display: none;
+}
 
  .hiddenClass {
     display: none;
@@ -520,27 +522,23 @@ $borderW: 2px;
 }
 
 @media (max-width:600px) {
-  .project-card-container {
-    width: auto; 
-    overflow: visible;  
-    height: 500px;
- }
+   .web{
+    display: none;
+   }
 
- .layer {
-  // z-index: -1;
-  // position: absolute;
-  // top: 250px; 
-  width: auto;
-  height: auto;
-  overflow: visible;
-  z-index: 10001;
-  // border-radius: 5px;
-  // background: black;
-  // opacity: 0;
-  // transform: scale(0.1);
-  // transition: all 0.5s ease;
-  // > * {
-  //   margin: 0;
-  // }
-}
+   .mobile{
+    display: block;
+    color: black;
+   }
+
+   .inside-des-project{
+    color: #000000;
+   }
+
+   .project_image{
+    // display: none;
+    width: 330px;
+    height: 325px;
+  }
+  
 }

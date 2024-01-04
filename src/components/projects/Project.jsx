@@ -4,25 +4,29 @@ import { projectData } from "../../Object Files/projectObject";
 
 const Project = () => {
   return (
-    <section id="project" className="aniProject" style={{ backgroundColor: 'white' }}>
+    <section
+      id="project"
+      className="aniProject"
+      style={{ backgroundColor: "white" }}
+    >
       <div className="project-cont">
-        
-        <div className="horizontal-scroll-wrapper squares">
-                {projectData.map((items) => {
+        <div className="web2 horizontal-scroll-wrapper squares">
+          {projectData.map((items) => {
+            return (
+              <ProjectCard key={items.id} {...items}>
+                {items.stacks.map((item) => {
                   return (
-                    <ProjectCard key={items.id} {...items}>
-                      {items.stacks.map((item) => {
-                        return (
-                          <span key={item} className="btn stacks_description">
-                            {item}
-                          </span>
-                        );
-                      })}
-                    </ProjectCard>
+                    <span key={item} className="btn stacks_description">
+                      {item}
+                    </span>
                   );
                 })}
-            </div>
-          </div> 
+              </ProjectCard>
+            );
+          })}
+        </div>
+      </div>
+     
     </section>
   );
 };

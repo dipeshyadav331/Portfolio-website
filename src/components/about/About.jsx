@@ -54,7 +54,7 @@ const About = () => {
           <br />
           <br />
 
-          <div className="about-me-textt flexx left_align">
+          <div className="about-me-textt flexx">
             <p className="ach-ie">
               <span className="ull">Achievements</span> :-
             </p>
