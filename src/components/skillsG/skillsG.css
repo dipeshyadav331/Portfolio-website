@@ -1,0 +1,48 @@
+.skillsG{
+    color: black;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 3rem;
+    /* padding-right: 8px; */
+    position: absolute;
+}
+
+.skillsG-outer{
+    max-width: 100%;
+    width: 80%;
+    background: repeating-radial-gradient(rgba(0,0,0,10) 1px , #ffffff 5px, #ffffff 175px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7rem;
+    margin-top: 4rem;
+    height: 80vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.skills_circle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* margin-left: 1; */
+}
+
+@media (max-width:600px){
+    .skillsG-outer{
+        display: none;
+    }
+}
+
+

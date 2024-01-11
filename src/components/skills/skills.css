@@ -1,76 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald:wght@200&family=Pixelify+Sans&family=Roboto+Condensed:wght@300&family=Roboto+Mono&display=swap");
 
-.aniSkill{
-   background-color: white;
+.aniSkill {
+  background-color: white;
 }
 
-.tech{
-   width: 65vw;
-   display: flex;
-   gap: 100px;
-   margin-top: 7%;
+.tech {
+  width: 65vw;
+  display: flex;
+  gap: 100px;
+  margin-top: 7%;
 }
 
-.lefttech{
-   width: 40%;
-   color: black;
-   padding-bottom: 5rem;
-   font-size: large;
+.lefttech {
+  width: 40%;
+  color: black;
+  padding-bottom: 5rem;
+  font-size: large;
 }
 
-.customFont{
-   font-family: 'Gabarito', cursive;
-   font-family: 'Oswald', sans-serif;
-   font-family: 'Pixelify Sans', cursive;
-   font-family: 'Roboto Condensed', sans-serif;
-   font-family: 'Roboto Mono', monospace;
+.customFont {
+  font-family: "Gabarito", cursive;
+  font-family: "Oswald", sans-serif;
+  font-family: "Pixelify Sans", cursive;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
-
-.makeitgrid{
-   display: grid;
-   grid-template-columns: repeat(2 , 1fr);
-   grid-template-rows: repeat(1 , 1fr);
-   color: black;
-   gap: 10px;
+.makeitgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  color: black;
+  gap: 10px;
 }
 
-.righttech{
-   width: 52%;
-   color: black;
+.righttech {
+  width: 52%;
+  color: black;
 }
 
 .my-skills-container {
-   width: 70%;
-   display: flex;
-   flex-direction: column;
-   gap: 40px;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
-   margin: auto;
-   /* padding: 2rem; */
+  display: none;
+  /* padding: 2rem; */
 }
 
-@media (max-width : 900px) {
-    
+@media (max-width: 600px) {
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: auto;
+    padding: 10px !important;
+    margin: 0 !important;
+  }
 
-   .tech{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0px;
-      width: auto;
-      padding: 10px !important;
-      margin: 0 !important;
-   }
+  .lefttech {
+    width: 100%;
+  }
 
-   .lefttech{
-      width: 100%;
-   }
+  .righttech {
+    /* display: none; */
+    width: 100%;
+  }
 
-   .righttech{
-     /* display: none; */
-     width: 100%;
-   }
-    
+  .my-skills-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+  }
 }

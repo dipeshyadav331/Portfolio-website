@@ -11,6 +11,7 @@ import Preloader from "../components/Preloader/index.jsx";
 import NavBar from "../components/navbar/NavBar.jsx";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Social from "../components/Social/Social.jsx";
+import Skillss from "../components/skillsG/skillsG.jsx"
 
 const Main = () => {
   const contactClick = useRef("#contact");
@@ -66,6 +67,7 @@ const Main = () => {
       {!isLoading && visible && <FloatNav/>}
       <About />
       <Project />
+      {/* <Skillss /> */}
       <Skills />
       <Education />
       <ContactForm contact={contactClick} />

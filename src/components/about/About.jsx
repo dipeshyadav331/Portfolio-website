@@ -73,8 +73,16 @@ const About = () => {
               </li>
               <li>
                 <h3>
+                  <a href="https://www.codechef.com/users/yadavdipesh331" target="blank">
+                    <span className="cyan">4 star (1850+) </span>
+                  </a>{" "}
+                  at CodeChef
+                </h3>
+              </li>
+              <li>
+                <h3>
                   <a href="https://leetcode.com/yadavdipesh" target="blank">
-                    <span className="cyan">Knight (1950+) </span>
+                    <span className="cyan">Knight (2000+)</span>
                   </a>{" "}
                   at Leetcode
                 </h3>

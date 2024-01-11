@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { slideUp } from "./animation";
 import styles from "./style.module.css";
+import Skillss from "../skillsG/skillsG.jsx";
 
 const Skills = () => {
   const phrase =
@@ -20,21 +21,27 @@ const Skills = () => {
       id="skill"
       className="aniSkill"
       style={{ backgroundColor: "white" }}
-    > 
+    >
       <div className="skills-container">
-        <div className="flex">
-          <div className="abt-image-div">
-            <img src={skill} alt="bulb toolbox icon" className="about-image" />
-          </div>
-          <div>
-            <h1 className="project-head-text alt-text">
-              {" "}
-              Skills and Technologies
-            </h1>
-            <hr className="short-hr project-hr" />
+        <div>
+          <div className="flex">
+            <div className="abt-image-div">
+              <img
+                src={skill}
+                alt="bulb toolbox icon"
+                className="about-image"
+              />
+            </div>
+            <div>
+              <h1 className="project-head-text alt-text">
+                {" "}
+                Skills and Technologies
+              </h1>
+              <hr className="short-hr project-hr" />
+            </div>
           </div>
         </div>
-
+        <Skillss />
         <div className="my-skills-container">
           {skillData.map((items) => {
             return (
@@ -49,28 +56,28 @@ const Skills = () => {
           <div className="lefttech">
             <h2>Technologies</h2>
             <hr />
-            <br /> 
             <br />
+            <br />
+            <div>
               <div>
-                <div>
-                  <p className="makeitgrid">
-                    {skills.split(",").map((word, index) => {
-                      return (
-                        <span key={index} className={styles.mask2}>
-                          <motion.span
-                            variants={slideUp}
-                            custom={index}
-                            animate={isInView ? "open" : "closed"}
-                            key={index}
-                          >
-                            {word}
-                          </motion.span>
-                        </span>
-                      );
-                    })}
-                  </p>
-                </div>
+                <p className="makeitgrid">
+                  {skills.split(",").map((word, index) => {
+                    return (
+                      <span key={index} className={styles.mask2}>
+                        <motion.span
+                          variants={slideUp}
+                          custom={index}
+                          animate={isInView ? "open" : "closed"}
+                          key={index}
+                        >
+                          {word}
+                        </motion.span>
+                      </span>
+                    );
+                  })}
+                </p>
               </div>
+            </div>
           </div>
 
           <div className="righttech">
