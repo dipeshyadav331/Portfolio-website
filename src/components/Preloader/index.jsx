@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
 
-const words = ["नमस्ते", "Hello", "Welcome", "to", "my", "personal", "portfolio"]
+const words = ["नमस्ते", "Hello", "Welcome", "to", "my", "portfolio"]
 
 export default function Index() {
     const [index, setIndex] = useState(0);

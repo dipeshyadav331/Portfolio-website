@@ -88,7 +88,7 @@ const Hero = ({ onClick }) => {
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 > 
                   <a
-                    href="https://drive.google.com/file/d/1FQh-jEs34fvCSzhPMj2-GOmtB_nf7hVg/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1JtMTbAHyM2Zf90Td8wJz5D7FlWznXXp7/view?usp=sharing"
                     target="blank"
                   >
                     <Rounded>
