@@ -138,7 +138,7 @@ const Socials = () => {
             >
             <div className="hide">
               <a
-                href="https://www.codechef.com/users/yadavdipesh331"
+                href="https://atcoder.jp/users/yadavdipesh"
                 target="blank"
               >
                 <Rounded className="circle_socials">
