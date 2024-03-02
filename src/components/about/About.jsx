@@ -66,7 +66,7 @@ const About = () => {
                     href="https://codeforces.com/profile/yadavdipesh"
                     target="blank"
                   >
-                    <span className="cyan">Specialist (1550+)</span>
+                    <span className="blue">Expert (1650+)</span>
                   </a>{" "}
                   at CodeForces
                 </h3>
