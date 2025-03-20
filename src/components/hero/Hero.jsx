@@ -1,6 +1,5 @@
 import "./hero.css";
-import { motion } from "framer-motion";
-import DipeshPhoto from "../../assets/dipesh.jpeg";
+import { motion } from "framer-motion"; 
 import Rounded from "../../cards/RoundedButton/index.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause } from "@fortawesome/free-solid-svg-icons";
@@ -88,7 +87,7 @@ const Hero = ({ onClick }) => {
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 > 
                   <a
-                    href="https://drive.google.com/file/d/1JtMTbAHyM2Zf90Td8wJz5D7FlWznXXp7/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1yzSwX-IBQwyMIyBppsXiyrEM6r13oHyQ/view?usp=drive_link"
                     target="blank"
                   >
                     <Rounded>

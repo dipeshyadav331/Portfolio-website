@@ -34,7 +34,7 @@ const About = () => {
           </p>
 
           <p className="about-me-text">
-            I am in my prefinal year of <span className="para-c">B. Tech</span>{" "}
+            I am in my final year of <span className="para-c">B. Tech</span>{" "}
             UG from <span className="para-c">NSUT Delhi </span>(erstwhile NSIT)
             in
             <span className="para-c"> Information Technology(IT) </span>
@@ -66,7 +66,7 @@ const About = () => {
                     href="https://codeforces.com/profile/yadavdipesh"
                     target="blank"
                   >
-                    <span className="blue">Expert (1650+)</span>
+                    <span className="blue">Expert (1700+)</span>
                   </a>{" "}
                   at CodeForces
                 </h3>
@@ -82,7 +82,7 @@ const About = () => {
               <li>
                 <h3>
                   <a href="https://leetcode.com/yadavdipesh" target="blank">
-                    <span className="cyan">Knight (2000+)</span>
+                    <span className="cyan">Guardian (2200+)</span>
                   </a>{" "}
                   at Leetcode
                 </h3>
@@ -210,7 +210,7 @@ const About = () => {
           </div>
           <br /> 
           <a
-            href="https://drive.google.com/file/d/1JtMTbAHyM2Zf90Td8wJz5D7FlWznXXp7/view?usp=sharing"
+            href="https://drive.google.com/file/d/1yzSwX-IBQwyMIyBppsXiyrEM6r13oHyQ/view?usp=drive_link"
             target="blank"
           >
             <Rounded target="blank">
